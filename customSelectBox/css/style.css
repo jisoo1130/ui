@@ -14,16 +14,15 @@
     cursor:pointer;
 }
 .select_box .box .select:after {
-	content:'';
+	content:'▼';
 	position:absolute;
 	top:12px;
 	right:10px;
 	width:20px;
 	height:12px;
-	background:url(../images/arr_list_down.png) no-repeat 0 0/20px 12px;
 }
 .select_box.on .box .select:after {
-	background:url(../images/arr_list_up.png) no-repeat 0 0/20px 12px;
+    content:'▲';
 }
 .select_box .box .list {
     display:none;
