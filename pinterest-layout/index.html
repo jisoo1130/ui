@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .cntBox {
+            width: 100%;
+        }
+
+        .item {
+            display: inline-block;
+            position: absolute;
+            width: 25%;
+            padding: 10px;
+        }
+
+        .item img {
+            width: 100%;
+        }
+
+        .item .inner {
+            border: 5px solid #ccc;
+        }
+
+        .item .inner p {
+            padding: 10px;
+        }
+    </style>
+    <script>
+        // 리사이즈 이벤트 한번만 실행
+        // var timer = null;
+
+        window.addEventListener('resize', function() {
+
+            // 리사이즈 이벤트 한번만 실행
+            // clearTimeout(timer);
+            // timer = setTimeout(boxLayout, 150);
+            boxLayout();
+
+        }, false);
+
+        window.addEventListener("load", function() {
+            boxLayout();
+        });
+
+        function boxLayout() {
+            var images = document.querySelectorAll(".item");
+            var imgStack = [0, 0, 0, 0];
+            var winW = window.innerWidth - 17;
+            var colWidth = winW / imgStack.length;
+            for (var i = 0; i < images.length; i++) {
+                var minIndex = imgStack.indexOf(Math.min.apply(0, imgStack));
+                var x = colWidth * minIndex;
+                var y = imgStack[minIndex];
+                imgStack[minIndex] += (images[i].offsetHeight);
+
+                // images[i].style.transform = 'translateX(' + x + 'px) translateY(' + y + 'px)';
+                images[i].style.left = x + 'px';
+                images[i].style.top = y + 'px';
+
+                if (i === images.length - 1) {
+                    document.querySelector(".cntBox").style.height = Math.max.apply(0, imgStack) + 'px';
+                }
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="cntBox">
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing software like Aldus PageMaker including versions of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img03.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. It has survived not only
+                    five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It
+                    was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages,
+                    and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem
+                    Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img04.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img01.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the of Lorem Ipsum</p>
+            </div>
+        </div>
+        <div class="item">
+            <div class="inner">
+                <img src="img/img02.jpg" />
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
