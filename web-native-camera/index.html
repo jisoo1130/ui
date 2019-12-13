@@ -26,15 +26,15 @@
         .pin {
             display: none;
             position: absolute;
-            top: 0;
+            bottom: 0;
             left: 0;
+            margin: 0 0 65px -25px;
             z-index: 10;
             border-radius: 15px;
             width: 50px;
             height: 30px;
             text-align: center;
             line-height: 28px;
-            ;
             background: #000;
             color: #fff;
         }
@@ -67,7 +67,7 @@
 
         .filebox label {
             display: inline-block;
-            margin:10px;
+            margin: 10px;
             padding: .5em .75em;
             color: #999;
             font-size: inherit;
@@ -93,45 +93,60 @@
     </style>
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
     <script>
-        $(document).ready(function () {
+        
+        $(function(){
+            
+            // 핀 입력
+            function pin(){
 
+                var $cnt = $('.cnt');
+                var $pin = $('.pin');
 
-            if (!('url' in window) && ('webkitURL' in window)) {
-                window.URL = window.webkitURL;
-            }
-            $('#camera').change(function (e) {
-                $('#pic').attr('src', URL.createObjectURL(e.target.files[0]));
-            });
-
-            var $cnt = $('.cnt');
-            var $pin = $('.pin');
-
-            $cnt.on('click', function (e) {
-                check(e);
-            });
-
-            function check(e) {
-                $cnt.append('<div class="pin">tag</div>');
-                $cnt.children($pin).last().css({
-                    display: 'block',
-                    left: e.pageX - 25,
-                    top: e.pageY - 95
+                $cnt.on('click', function (e) {
+                    check(e);
                 });
+
+                function check(e) {
+                    $cnt.append('<div class="pin">tag</div>');
+                    $cnt.children($pin).last().css({
+                        display: 'block',
+                        left: ((e.pageX / $cnt.width()) * 100) + '%',
+                        bottom: ((e.pageY / $cnt.height()) * -100) + 100 + '%'
+                    });
+                }
+
             }
+
+            // 카메라 실행
+            function camera(){
+
+                if (!('url' in window) && ('webkitURL' in window)) {
+                    window.URL = window.webkitURL;
+                };
+
+                $('#camera').change(function (e) {
+                    $('#pic').attr('src', URL.createObjectURL(e.target.files[0]));
+                });
+
+            }
+            
+            pin();
+            camera();
 
         });
-
+        
 
     </script>
 </head>
 
 <body>
-    <div class="filebox"> <label for="camera">업로드</label> <input type="file" id="camera" name="camera" capture="camera" accept="image/*"></div>
+    <div class="filebox">
+        <label for="camera">업로드</label>
+        <input type="file" id="camera" name="camera" capture="camera" accept="image/*">
+    </div>
     <div class="cnt">
         <img id="pic" />
     </div>
-
-
 </body>
 
 </html>
