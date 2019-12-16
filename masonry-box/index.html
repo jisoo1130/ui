@@ -67,21 +67,44 @@
             border: 4px solid #fff;
             border-radius: 8px;
             background: no-repeat center / cover;
+            cursor:pointer;
+        }
+        
+        .box .item .txt {
+            opacity:0;
+            transition: .3s;
+            text-align: center;
+        }
+
+        .box .item:hover .txt{
+            position: absolute;
+            top:0;
+            left:0;
+            width: 100%;
+            height: 100%;
+            background: rgba(255, 255, 255, .8);
+            opacity:1;
+        }
+        .box .item .txt h3{
+            height:40px;
+            line-height:40px;
+            font-size:20px;
+
         }
 
         .box .item.type01 {
+            width: 12.5%;
+            height: 500px;
+        }
+
+        .box .item.type02 {
             width: 25%;
             height: 400px;
         }
 
-        .box .item.type02 {
-            width: 50%;
-            height: 200px;
-        }
-
         .box .item.type03 {
             width: 50%;
-            height: 400px;
+            height: 300px;
         }
 
         .box .like {
@@ -98,56 +121,172 @@
             background: #fff;
             color: #dd2266;
         }
+
+        .box .num {
+            position: absolute;
+            left: 45px;
+            bottom: 8px;
+            font-size:25px;
+            font-weight: 600;
+            color:#fff;
+        }
+        .select{
+            margin:10px;
+            width: 200px;
+            height:50px;
+            border:2px solid #ccc;
+            padding:10px;
+            box-sizing: border-box;
+            font-size:20px;
+        }
+        .list li{
+            float:left;
+            margin:10px;
+            border:2px solid #ccc;
+            padding:10px;
+            box-sizing: border-box;
+            height:50px;
+            font-size:20px;
+            list-style:none;
+            cursor:pointer;
+        }
     </style>
 
 </head>
 
 <body>
+    <div>
+        <ul class="list">
+            <li>카테고리01</li>
+            <li>카테고리02</li>
+            <li>카테고리03</li>
+            <li>카테고리04</li>
+        </ul>
+        <select class="select">
+            <option>좋아요순</option>
+            <option>조회순</option>
+        </select>
+    </div>
     <div class="box">
         <div class="item">
-            <button type="button" class="like">♥</button> 
+            <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
         <div class="item">
             <button type="button" class="like">♥</button>
+            <p class="num">0</p>
+            <div class="txt">
+                <h3>제목</h3>
+                <p>내용</p>
+            </div>
         </div>
     </div>
 
