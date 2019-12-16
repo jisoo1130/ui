@@ -12,38 +12,31 @@
 
 
         $(document).ready(function () {
-            setTimeout(function () {
-                $('.box').masonry({
-                    itemSelector: '.item',
-                    percentPosition: true
-                });
-
-            }, 50);
-
-
-
 
             var $item = $('.box').children('.item');
 
-                var random = randomNum();
+            for (var i = 0; i < $item.length; i++) {
 
-                console.log();
+                var random = Math.floor(Math.random() * 3);
 
-                for (var i = 0; i < random; i++) {
-                    var n = 
-                    console.log(1);
+                $item.eq(i).css({
+                    backgroundImage: 'url("img/img' + (i + 1) + '.png")'
+                });
+
+                if (random === 0) {
+                    $item.eq(i).addClass('type01');
+                } else if (random === 1) {
+                    $item.eq(i).addClass('type02');
+                } else if (random === 2) {
+                    $item.eq(i).addClass('type03');
                 };
 
+            };
 
-
-            function randomNum(num){
-                num = Math.random() * ($item.length);
-                num = Math.floor(random);
-                return num;
-            }
-
-
-
+            $('.box').masonry({
+                itemSelector: '.item',
+                percentPosition: true
+            });
 
         });
 
@@ -58,9 +51,7 @@
         }
 
         .box {
-            margin: 0 auto;
             width: 100%;
-            max-width: 1200px;
         }
 
         .box:after {
@@ -73,12 +64,24 @@
         .box .item {
             float: left;
             position: relative;
-            width: 25%;
+            border: 4px solid #fff;
+            border-radius: 8px;
+            background: no-repeat center / cover;
         }
 
-        .box .item img {
-            display: block;
-            width: 100%;
+        .box .item.type01 {
+            width: 25%;
+            height: 400px;
+        }
+
+        .box .item.type02 {
+            width: 50%;
+            height: 200px;
+        }
+
+        .box .item.type03 {
+            width: 50%;
+            height: 400px;
         }
 
         .box .like {
@@ -102,63 +105,48 @@
 <body>
     <div class="box">
         <div class="item">
-            <img src="img/img01.png" />
+            <button type="button" class="like">♥</button> 
+        </div>
+        <div class="item">
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img02.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img03.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img04.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img05.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img06.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img07.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img08.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img09.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img10.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img11.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img12.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img13.png" />
             <button type="button" class="like">♥</button>
         </div>
         <div class="item">
-            <img src="img/img14.png" />
-            <button type="button" class="like">♥</button>
-        </div>
-        <div class="item">
-            <img src="img/img15.png" />
             <button type="button" class="like">♥</button>
         </div>
     </div>
