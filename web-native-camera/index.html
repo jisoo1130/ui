@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title></title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.css" type="text/css" rel="stylesheet" />
     <style>
         * {
             margin: 0;
@@ -107,7 +108,7 @@
                 });
 
                 function check(e) {
-                    $cnt.append('<div class="pin">tag</div>');
+                    $cnt.append('<div class="pin bounceIn">tag</div>');
                     $cnt.children($pin).last().css({
                         display: 'block',
                         left: ((e.pageX / $cnt.width()) * 100) + '%',
