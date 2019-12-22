@@ -1,9 +1,4 @@
----
-layout: post
-title: "[UI/UX] 삼성화재다이렉트 해외여행보험 UI/UX 분석"
-tags: [UI, UX]
-comments: true
----
+<link rel="stylesheet" type="text/css" href="https://kongseongju.github.io/style.css" />
 
 # 분석 대상
 [삼성화재 다이렉트 해외여행보험](https://direct.samsungfire.com/ria/pc/product/travel/?state=Front)
@@ -27,7 +22,7 @@ comments: true
     * **KB손해보험의 경우**
     ![KB손해보험](https://kongseongju.github.io/ui/img/img02.png)
 
-2. `STEP.02 보험료 계산 결과` 화면에서 이전의 입력 항복(고객정보, 여행기간, 여행목적)을 바로 수정하여 계산 결과를 확인할 수 있었습니다. 원하는 결과를 바로 수정하여 확인할 수 있다는 점에서 매우 편리하였습니다.
+2. `STEP.02 보험료 계산 결과` 화면에서 이전의 입력 항목(고객정보, 여행기간, 여행목적)을 바로 수정하여 계산 결과를 확인할 수 있었습니다. 원하는 결과를 바로 수정하여 확인할 수 있다는 점에서 매우 편리하였습니다.
     ![수정입력가능](https://kongseongju.github.io/ui/img/img03.png)
 
 3. `STEP.02 보험료 계산 결과` 화면 우측의 `고객님을 위한 통계 서비스`에서 저와 같은 환경의 사용자가 선택하는 상품의 통계를 바로 확인할 수 있는 점이 좋았습니다. 사용자를 위한 세심한 배려가 느껴지는 UX였습니다.
@@ -47,10 +42,10 @@ comments: true
     ![진행사항](https://kongseongju.github.io/ui/img/img09.png)
 
 
+# 기술적으로 좋은 점, 개선할 점
 
+1. 
 
-
-팝업 뷰의 경우 닫기버튼이 위에있어서 맥락상 안좋음
 
 
 
