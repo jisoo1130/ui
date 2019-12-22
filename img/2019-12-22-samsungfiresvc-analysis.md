@@ -34,6 +34,13 @@ comments: true
     ![고객님을 위한 통계 서비스](https://kongseongju.github.io/ui/img/img04.png)
     ![고객님을 위한 통계 서비스](https://kongseongju.github.io/ui/img/img05.png)
 
+4. 우측의 `다이렉트 보험 가입 후기`를 통해 사용자가 어떠한 부분에서 좋은점 및 불편한 점을 느꼈는지 투명하게 공유되는 화면이 인상 깊었으며, 가입 후 이벤트를 통하여 사용자의 피드백을 적극 수용하려는 점이 좋았습니다.
+    ![다이렉트 보험 가입 후기](https://kongseongju.github.io/ui/img/img06.png)
+    ![다이렉트 보험 가입 후기](https://kongseongju.github.io/ui/img/img07.png)
+
+특정 상품을 구입하기 위해서  
+
+
 
 
 
