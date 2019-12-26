@@ -1,0 +1,42 @@
+@charset "utf-8";
+
+@font-face { 
+	font-family:"nanumB"; 
+	font-style:normal; 
+	font-weight:normal; 
+	src: url("");
+	src: url("/siw/common/font/NanumBarunGothic.eot");
+	src:local(※),
+	url("../font/NanumBarunGothic.eot?#iefix") format("embedded-opentype"), 
+	url("../font/NanumBarunGothic.woff") format("woff")}
+	
+/*Default set*/
+html,body,form,div,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,ul,ol,li,fieldset,table,th,td{margin:0;padding:0;font-weight:normal}
+body{font-family:'nanumB','돋움',Dotum,'굴림',Gulim;font-size:14px;line-height:1.6;color:#333;word-wrap:break-word;word-break:keep-all;-webkit-text-size-adjust:none}
+input, textarea, select{padding:0;color:#000;font-size:14px;font-family:'nanumB','돋움',Dotum,'굴림',Gulim;box-sizing:border-box}
+input.radio, input.check{border:0;background:none}
+
+td, th{word-wrap:break-word}
+
+a:link{text-decoration:none;color:#333}
+a:visited{text-decoration:none;color:#333}
+a:hover, a:active{text-decoration:underline;color:#006bd8}
+button{margin:0;padding:0;border:0;background:none;width:auto;outline:0;vertical-align:middle;font-family:'nanumB','돋움',Dotum,'굴림',Gulim;cursor:pointer}
+button:focus{outline:1px dotted #333}
+button:hover, input[type=button]:hover{/* text-decoration:underline */}
+button, input[type="button"], input[type="reset"], input[type="submit"]{cursor:pointer}
+button::-moz-focus-inner{margin:0;padding:0;border:0}
+
+fieldset,img{border:none}
+table{width:100%;border-collapse:separate;*border-collapse:collapse;border:0;border-spacing:0}
+th{border:0;text-align:center}
+td{border:0;empty-cell:show}
+table caption,legend{overflow:hidden;margin-left:-9999px;width:0;height:0;font-size:0;line-height:0}
+ol,ul{list-style:none}
+ol:after,ul:after{content:"";display:block;clear:both;zoom:1}
+em{font-style:normal}
+hr{position:absolute;left:-9999px;font-size:0;line-height:0}
+strong{font-weight:600}
+abbr{text-decoration:none}
+
+.hidden{position:absolute;left:-9999px;font-size:0;line-height:0;text-indent:-9999px}
