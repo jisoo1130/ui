@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="google" content="notranslate" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        html {
+            width: 100%;
+            height: 100%;
+        }
+
+        body {
+            width: 100%;
+            height: 100%;
+        }
+
+        #particles-js {
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(to top, #08194a, #000);
+        }
+
+        #particles-js .particles-js-canvas-el {
+            position: fixed;
+        }
+
+        #particles-js .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 20px;
+            line-height: 30px;
+            color: #fff;
+        }
+
+        #particles-js .dimmed {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 10;
+            width: 100%;
+            height: 100%;
+            background: #000;
+            opacity: 0;
+        }
+
+        .contents {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="particles-js">
+        <div class="title">title</div>
+        <span class="dimmed"></span>
+    </div>
+    <div class="contents"></div>
+    <script src="./particles.min.js"></script>
+    <script>
+        particlesJS.load('particles-js', 'particles.json', function () {
+
+            const mainDimmed = document.getElementById('particles-js').querySelector('.dimmed');
+            const bgMain = document.querySelector('#particles-js');
+            const mainTit = document.getElementById('particles-js').querySelector('.title');
+            const windowHeight = window.innerHeight;
+            let ratio = 0;
+            let bgInterval = null;
+            let bgIntervalNum = 0;
+            let bgIntervalRes = 0;
+
+            bgMain.style.display = 'block';
+            bgMain.style.height = windowHeight + 'px';
+
+            window.onload = function () {
+                mainRatio();
+                mainBgInit();
+            }
+
+            window.addEventListener('scroll', function () {
+                if (window.scrollY === 0) {
+                    mainDimmed.style.display = 'none';
+                } else {
+                    mainDimmed.style.display = 'block';
+                    mainBgSet();
+                }
+                mainRatio();
+            });
+
+            function mainRatio() {
+                ratio = Math.floor(window.scrollY / windowHeight * 1000) / 1000;
+            }
+
+            function mainBgSet() {
+                const star = document.getElementById('particles-js').querySelector('.particles-js-canvas-el');
+                star.style.top = Math.floor(ratio * 300) + 'px';
+                mainTit.style.marginTop = Math.floor(ratio * 500) + 'px';
+                mainDimmed.style.opacity = ratio;
+            }
+
+            function mainBgInit() {
+                if (ratio < 1 && ratio !== 0) {
+                    const star = document.getElementById('particles-js').querySelector('.particles-js-canvas-el');
+                    console.log('main bg init start');
+                    mainTit.style.marginTop = Math.floor(ratio * 500) + 'px';
+                    mainDimmed.style.display = 'block';
+                    bgInterval = setInterval(function () {
+                        bgIntervalNum++;
+                        bgIntervalRes = Math.round(bgIntervalNum * 0.01 * 100) / 100;
+                        if (bgIntervalNum >= ratio * 100) {
+                            clearInterval(bgInterval);
+                        }
+                        star.style.top = Math.floor(ratio * 300) + 'px';
+                        mainDimmed.style.opacity = bgIntervalRes;
+                    }, 10);
+                }
+            }
+
+        });
+    </script>
+
+</body>
+
+</html>
