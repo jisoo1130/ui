@@ -6,9 +6,6 @@ https://recordboy.github.io/ui/custom-selectbox/
 ## 인테리어 무작위 배치 테스트
 https://recordboy.github.io/ui/masonry-box/
 
-## 인테리어 무작위 배치 테스트
-https://recordboy.github.io/ui/masonry-box/
-
 ## 파노라마 뷰어
 https://recordboy.github.io/ui/panorama-photo/
 
