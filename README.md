@@ -1,4 +1,4 @@
-# UI Test
+# UI Test Page
 
 ## 커스텀 셀렉트 박스
 https://recordboy.github.io/ui/custom-selectbox/
