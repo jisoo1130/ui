@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title></title>
+    <link rel="stylesheet" href="./common/css/style.css">
+    <link rel="stylesheet" href="./common/css/animate.css">
+    <script src="./common/js/jquery-3.4.1.min.js"></script>
+    <script src="./common/js/jquery.countdown.min.js"></script>
+    <script src="./common/js/wow.min.js"></script>
+</head>
+
+<body>
+    <div class="loading">
+        <img src="./common/images/img_loading.gif" alt="loading.." />
+    </div>
+    <div class="main">
+        <header class="header">
+            <div class="inner">
+                <h1><a herf="#">logo</a></h1>
+                <p>Worldwid Finanicial Group AFG is a Company that Collects and Sells Insurance Brands<br>The AFG open
+                    is on November 16th</p>
+                <p>©2020 AFG</p>
+            </div>
+        </header>
+
+        <section class="section">
+            <article class="cnt01">
+                <ul class="count">
+                    <li><span class="days">00</span>
+                        <p class="days_text">Days</p>
+                    </li>
+                    <li><span class="hours">00</span>
+                        <p class="hours_text">Hours</p>
+                    </li>
+                    <li><span class="minutes">00</span>
+                        <p class="minutes_text">Minutes</p>
+                    </li>
+                    <li><span class="seconds">00</span>
+                        <p class="seconds_text">Seconds</p>
+                    </li>
+                </ul>
+                <h2 class="info">
+                    <div class="date">2020. 11. 16</div>
+                    <div class="text">The Homepage will Open Soon.</div>
+                </h2>
+                <div class="scroll">Scroll Down</div>
+            </article>
+            <article class="cnt02">
+                <dl class="info">
+                    <dt>Brand Design &<br>identity</dt>
+                    <dd>Authentic은 '정직한' 이라는 의미의 단어인 카페 델라루즈의 로고와 다양한 확장 어플리케이션을 제작했습니다. 많은 카페들은 고객들에게 고유한 경험을 선사하지 못하고 판매 위주의 서비스를 제공하고 있는 상황에서, 카페용품은 물론 공간 내의 다양한 접점에서 고유의 아이덴티티를 적용했습니다.</dd>
+                </dl>
+            </article>
+            <article class="cnt03">
+                <div class="circle"><img src="./common/images/img_circle.png" /></div>
+                <dl class="info">
+                    <dt>Logo Concept</dt>
+                    <dd>어센틱은 원뜻인 '태풍'에서 풀발하여 확장이 용이한 다각형의 그래픽 모티프를 개발했습니다.<br>개발된 모티프는 로고타입부터 사이니지까지 다양한 매체에 적용됩니다.</dd>
+                </dl>
+            </article>
+            <article class="cnt04">
+                
+            </article>
+            <article class="cnt05">
+                
+            </article>
+        </section>
+
+
+
+        Logo Concept
+        Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content Content
+
+
+        <footer>
+
+        </footer>
+    </div>
+    <script class="source" type="text/javascript">
+
+        // loading
+        $(window).ready(function() {
+            setTimeout(function() {
+                $('.loading').animate({
+                    opacity: 0
+                }, 500, function() {
+                    $('.loading').hide();
+                });
+            }, 1000);
+        });
+
+        // count
+        var now = new Date();
+        var day = now.getDate();
+        var month = now.getMonth() + 1;
+        var year = now.getFullYear() + 1;
+        var nextyear = '11/16/2020 00:00:00';
+
+        $('.main .count').countdown({
+            date: nextyear,
+            offset: +2,
+            day: 'Day',
+            days: 'Days',
+            hideOnComplete: true
+        }, function (container) {
+            console.log('Done!');
+        });
+
+        // wow
+        wow = new WOW(
+            {
+                animateClass: 'animated',
+                offset: 100,
+                callback: function (box) {
+                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                }
+            }
+        );
+        wow.init();
+
+    </script>
+
+</body>
+
+</html>
