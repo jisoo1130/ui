@@ -22,7 +22,7 @@
     
 /* reset */
 html{height:100%}
-body{position:relative;margin:0;padding:0;height:100%;font-size:15px;line-height:1.4;font-family:'Noto Sans Korean', dotum, sans-serif}
+body{position:relative;margin:0;padding:0;height:100%;font-size:15px;line-height:1.6;font-family:'Noto Sans Korean', dotum, sans-serif}
 html, h1, h2, h3, h4, h5, h6, form, fieldset, img{margin:0;padding:0;border:0}
 h1, h2, h3, h4, h5, h6{font-size:15px;font-family:'Noto Sans Korean', dotum, sans-serif}
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
@@ -52,14 +52,38 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .header {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 50%;
+    z-index: 10;
     width: 100%;
     transform: translateX(-50%);
     max-width: 1640px;
-    height: 100px;
     text-align: center;
     color: #fff;
+}
+
+.main .header .logo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.main .header .logo a {
+    color: #fff;
+}
+
+.main .header .text {
+    letter-spacing: 1px;
+}
+
+.main .header .copy {
+    position: absolute;
+    top: 0;
+    right: 0;
+    font-size: 30px;
+    font-weight: bold;
 }
 
 .main .cnt01 {
@@ -73,7 +97,6 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .cnt01 .count {
     padding-top: 430px;
-    font-family: 'Oswald Medium';
     width: 100%;
     text-align: center;
 }
@@ -104,6 +127,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .count > li span {
+    font-family: 'Oswald Medium';
     display: inline-block;
     position: relative;
     line-height: 100px;
@@ -122,6 +146,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .cnt01 .count > li p {
     margin-top: 10px;
+    font-weight: bold;
     font-size: 20px;
     color: #556276;
 }
@@ -129,13 +154,14 @@ a{text-decoration:none;font-weight:bold;color:#333}
 .main .cnt01 .info {
     padding-top: 50px;
     width: 100%;
+    letter-spacing: 1px;
     text-align: center;
     color: #fff;
 }
 
 .main .cnt01 .info .date {
     font-family: 'Oswald Medium';
-    font-size: 25px;
+    font-size: 30px;
 }
 
 .main .cnt01 .scroll {
@@ -153,7 +179,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     transform: translateX(-50%);
     width: 1px;
     height: 20px;
-    font-size: 12px;
+    font-size: 11px;
     background-color: #fff;
 }
 
@@ -171,24 +197,30 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt02 {
+    display: table;
     height: 440px;
     background-color: #000;
 }
 
 .main .cnt02 .info {
+    display: table-cell;
+    vertical-align: middle;
     position: relative;
+    margin: 0 auto;
     box-sizing: border-box;
-    padding-left: 200px;
+    padding-left: 550px;
+    max-width: 1640px;
+    font-weight: bold;
     color: #fff;
 }
 
-
 .main .cnt02 .info dt {
     position: absolute;
-    top: 0;
-    left: 0;
-    width: 200px;
-    font-size: 30px;
+    top: 50%;
+    left: 100px;
+    transform: translateY(-50%);
+    font-weight: bold;
+    font-size: 35px;
 }
 
 .main .cnt02 .info dd {
@@ -236,11 +268,19 @@ a{text-decoration:none;font-weight:bold;color:#333}
     background-size: cover;
 }
 
+.main .cnt05 {
+    max-width: 1640px;
+}
+
+.main .cnt05 .title {
+    border-bottom: 1px solid #000;
+}
+
 .loading {
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 10;
+    z-index: 50;
     width: 100%;
     height: 100%;
     background-color: #fff;
