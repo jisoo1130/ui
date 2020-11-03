@@ -12,22 +12,34 @@
     url(../font/notosans/NotoSansKR-Thin-Hestia.otf) format('opentype');
 }
 
-/* Oswald */
-@font-face {
-    font-family: 'Oswald Medium';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Oswald Medium'),
-    url(../font/oswald/Oswald-Medium.woff) format('woff')
-}
-
 /* Everett */
+@font-face {
+    font-family: 'Everett Light';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Everett-Light'),
+    url(../font/everett/Everett-Light.woff2) format('woff2')
+}
 @font-face {
     font-family: 'Everett Regular';
     font-style: normal;
-    font-weight: normal;
-    src: local('everettregular'),
-    url(../font/everett/everettregular.woff2) format('woff2')
+    font-weight: 400;
+    src: local('Everett-Regular'),
+    url(../font/everett/Everett-Regular.woff2) format('woff2')
+}
+@font-face {
+    font-family: 'Everett Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('Everett-Medium'),
+    url(../font/everett/Everett-Medium.woff2) format('woff2')
+}
+@font-face {
+    font-family: 'EverettJana Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('EverettJana-Regular'),
+    url(../font/everett/EverettJana-Regular.woff2) format('woff2')
 }
 
 /* Roboto */
@@ -181,16 +193,16 @@ a{text-decoration:none;font-weight:bold;color:#333}
 .main .cnt01 .count > li {
     display: inline-block;
     position: relative;
-    width: 150px;
+    width: 200px;
     text-align: center;
 }
 
 .main .cnt01 .count > li::after {
     content: ':';
     position: absolute;
-    top: 30px;
+    top: -8px;
     right: -6px;
-    font-size: 25px;
+    font-size: 60px;
 }
 
 .main .cnt01 .count > li:last-child::after {
@@ -198,7 +210,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .count > li span {
-    font-family: 'Everett Regular';
+    font-family: 'EverettJana Regular';
     display: inline-block;
     position: relative;
     line-height: 100px;
@@ -206,6 +218,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .count > li p {
+    font-family: 'EverettJana Regular';
     margin-top: 10px;
     font-family: Roboto;
     font-weight: 500;
@@ -225,11 +238,12 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .info .date {
-    font-family: 'Oswald Medium';
+    font-family: 'Roboto';
     font-size: 28px;
 }
 
 .main .cnt01 .info .text {
+    font-family: 'Roboto';
     font-size: 16px;
 }
 
@@ -255,6 +269,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .scroll .text {
+    font-family: 'Roboto';
     font-size: 12px;
 }
 
