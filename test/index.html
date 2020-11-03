@@ -125,18 +125,24 @@
 
             setInterval(function() {
                 $scrollBar.animate({
-                    bottom: 0
-                }, 700, 'easeOutCubic', function() {
+                    height: "45px"
+                }, 500, 'easeOutCubic', function() {
+
+
+
+
                     $scrollBar.animate({
-                        opacity: '0'
-                    }, 300, 'easeOutCubic', function() {
+                        top: "80px"
+                        
+                    }, 500, 'easeOutCubic', function() {
+
                         $scrollBar.css({
-                            bottom: '52px',
-                            opacity: 1
+                            top: '35px',
+                            height: '0'
                         });
                     });
                 });
-            }, 1000);
+            }, 1100);
         }
 
         // loading
