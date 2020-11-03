@@ -292,6 +292,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .cnt03 {
     position: relative;
+    margin: 0 auto;
     max-width: 1920px;
     height: 1270px;
 }
@@ -393,6 +394,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt05 {
+    margin: 0 auto;
     box-sizing: border-box;
     padding: 0 40px;
     max-width: 1720px;
