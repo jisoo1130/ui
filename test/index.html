@@ -9,6 +9,7 @@
     <link rel="stylesheet" href="./common/css/style.css">
     <link rel="stylesheet" href="./common/css/animate.css">
     <script src="./common/js/jquery-3.4.1.min.js"></script>
+    <script src="./common/js/jquery-ui.min.js"></script>
     <script src="./common/js/jquery.countdown.min.js"></script>
     <script src="./common/js/wow.min.js"></script>
 </head>
@@ -91,8 +92,43 @@
     </div>
     <script class="source" type="text/javascript">
 
-        // loading
         $(window).ready(function() {
+            init();
+        });
+
+        function init (){
+            scroll();
+            loading();
+            count();
+            wow();
+        }
+
+        // scroll
+        function scroll (){
+
+            var $scrollBar = $('.cnt01 .scroll .bar');
+            var setMoving = null;
+
+            setInterval(function() {
+                $scrollBar.animate({
+                    bottom: 0
+                }, 500, 'easeOutCubic', function() {
+                    $scrollBar.animate({
+                        opacity: '0'
+                    }, 300, function() {
+                        $scrollBar.css({
+                            bottom: '23px',
+                            opacity: 1
+                        });
+                    });
+                });
+            }, 1000);
+            
+        }
+
+        // loading
+        function loading (){
+
             $('body').css('overflow', 'hidden');
             $('.cnt01').height($(window).height());
             setTimeout(function() {
@@ -103,37 +139,40 @@
                 }, 500, function() {
                     $('.loading').hide();
                 });
-            }, 3000);
-        });
+            }, 2000);
+        }
 
         // count
-        var now = new Date();
-        var day = now.getDate();
-        var month = now.getMonth() + 1;
-        var year = now.getFullYear() + 1;
-        var nextyear = '11/16/2020 00:00:00';
+        function count (){
+            var now = new Date();
+            var day = now.getDate();
+            var month = now.getMonth() + 1;
+            var year = now.getFullYear() + 1;
+            var nextyear = '11/16/2020 00:00:00';
 
-        $('.main .count').countdown({
-            date: nextyear,
-            offset: +2,
-            day: 'Day',
-            days: 'Days',
-            hideOnComplete: true
-        }, function (container) {
-            console.log('Done!');
-        });
+            $('.main .count').countdown({
+                date: nextyear,
+                offset: +2,
+                day: 'Day',
+                days: 'Days',
+                hideOnComplete: true
+            }, function (container) {
+                console.log('Done!');
+            });
+        }
 
         // wow
-        wow = new WOW(
-            {
-                animateClass: 'animated',
-                offset: 100,
-                callback: function (box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+        function wow (){
+            var wow = new WOW({
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function (box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
                 }
-            }
-        );
-        wow.init();
+            );
+            wow.init();
+        }
 
     </script>
 
