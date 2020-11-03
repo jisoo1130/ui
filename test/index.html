@@ -20,8 +20,8 @@
     </div>
     <div class="main">
         <header class="header">
-            <h1 class="logo"><a herf="#">logo</a></h1>
-            <p class="text">Worldwide ◎ Finanicial Group AFG is a Company that Collects and Sells Insurance Brands<br>The AFG open
+            <h1 class="logo"><a herf="#"><img src="./common/images/logo.png" alt="" /></a></h1>
+            <p class="text">Worldwide <img src="./common/images/ico_earth.png" alt="" /> Finanicial Group AFG is a Company that Collects and Sells Insurance Brands<br>The AFG open
                 is on November 16th</p>
             <div class="copy">©2020 AFG</div>
         </header>
@@ -58,42 +58,56 @@
                 </dl>
             </article>
             <article class="cnt03">
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_01.png" alt="" /></div>
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_02.png" alt="" /></div>
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_03.png" alt="" /></div>
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_04.png" alt="" /></div>
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_05.png" alt="" /></div>
-                <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_06.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0.2s"><img src="./common/images/img_cnt03_01.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0"><img src="./common/images/img_cnt03_02.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0.7s"><img src="./common/images/img_cnt03_03.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0.4s"><img src="./common/images/img_cnt03_04.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0.6s"><img src="./common/images/img_cnt03_05.png" alt="" /></div>
+                <div class="item wow fadeInUp" data-wow-delay="0.3s"><img src="./common/images/img_cnt03_06.png" alt="" /></div>
                 <div class="item wow fadeInUp" data-wow-delay="0.5s"><img src="./common/images/img_cnt03_07.png" alt="" /></div>
-                <div class="circle"><img src="./common/images/img_circle.png" alt="" /></div>
+                <div class="circle wow fadeInUp" data-wow-delay="0s"><img src="./common/images/img_circle.png" alt="" /></div>
                 <dl class="info">
                     <dt>Logo Concept</dt>
                     <dd>어센틱은 원뜻인 '태풍'에서 풀발하여 확장이 용이한 다각형의 그래픽 모티프를 개발했습니다.<br>개발된 모티프는 로고타입부터 사이니지까지 다양한 매체에 적용됩니다.</dd>
                 </dl>
             </article>
-            <article class="cnt04">
-                
-            </article>
+            <article class="cnt04"></article>
             <article class="cnt05">
+                <div class="visual"><img src="./common/images/img_cnt05_01.png" alt="" /></div>
                 <div class="title">Iconnic</div>
+                <div class="info">
+                    <div class="logo">
+                        <img src="./common/images/img_cnt05_02.png" alt="" />
+                    </div>
+                    <dl class="text">
+                        <dt>Logo Concept</dt>
+                        <dd>CONTRARY TO POPULAR BELIFE, LOREM IPSUM IS NOT SIMPLY RANDOM TEXT/ IT HAS ROOTS IN A PIECE OF BC. MAKING IT OVER 2000 YEARS OLD. CONTRARY TO POPULAR BELIEF, LOREM IPSUM IS NOT SIMPLY.</dd>
+                    </dl>
+                    <dl class="text">
+                        <dt>Logo Concept</dt>
+                        <dd>델라루즈의 원뜻인 '빛'에서 출발하여 확장이 용이한 다각형의 그래픽 모티프를 개발했습니다. 개발된 모티프는 로고타입부터 사이니지까지 다양한 매체에 적용됩니다. 델라루즈의 원뜻인 '빛'에서 출발하여 확장이 용이한 다각형의 그래픽 모티프를 개발했습니다.</dd>
+                    </dl>
+                </div>
             </article>
-            <article class="cnt06">
-                <div><img src="./common/images/img_circle.png" alt="" /></div>
-            </article>
+            <article class="cnt06"></article>
+            <article class="cnt07"></article>
+            <article class="cnt08"></article>
+            <article class="cnt09"></article>
+            <article class="cnt10"></article>
+            <article class="cnt11"></article>
         </section>
-
-
-
-
-
-        <footer>
-
-        </footer>
+        <footer></footer>
     </div>
     <script class="source" type="text/javascript">
 
         $(window).ready(function() {
             init();
+        });
+
+        $(window).on('resize', function() {
+            $('.cnt01').css({
+                height: $(window).height()
+            });
         });
 
         function init (){
@@ -112,18 +126,17 @@
             setInterval(function() {
                 $scrollBar.animate({
                     bottom: 0
-                }, 500, 'easeOutCubic', function() {
+                }, 700, 'easeOutCubic', function() {
                     $scrollBar.animate({
                         opacity: '0'
-                    }, 300, function() {
+                    }, 300, 'easeOutCubic', function() {
                         $scrollBar.css({
-                            bottom: '23px',
+                            bottom: '52px',
                             opacity: 1
                         });
                     });
                 });
             }, 1000);
-            
         }
 
         // loading
