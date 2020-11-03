@@ -172,16 +172,16 @@ a{text-decoration:none;font-weight:bold;color:#333}
 .main .cnt01 .count > li {
     display: inline-block;
     position: relative;
-    width: 150px;
+    width: 220px;
     text-align: center;
 }
 
 .main .cnt01 .count > li::after {
     content: ':';
     position: absolute;
-    top: 30px;
-    right: -6px;
-    font-size: 25px;
+    top: 14px;
+    right: -12px;
+    font-size: 80px;
 }
 
 .main .cnt01 .count > li:last-child::after {
@@ -192,15 +192,14 @@ a{text-decoration:none;font-weight:bold;color:#333}
     font-family: 'Oswald Medium';
     display: inline-block;
     position: relative;
-    line-height: 100px;
-    font-size: 120px;
+    line-height: 180px;
+    font-size: 180px;
 }
 
 .main .cnt01 .count > li p {
-    margin-top: 10px;
     font-family: Roboto;
     font-weight: 500;
-    font-size: 20px;
+    font-size: 30px;
     color: #556276;
 }
 
@@ -217,11 +216,11 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .cnt01 .info .date {
     font-family: 'Oswald Medium';
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .main .cnt01 .info .text {
-    font-size: 18px;
+    font-size: 16px;
 }
 
 .main .cnt01 .scroll {
