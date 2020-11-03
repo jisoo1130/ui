@@ -21,6 +21,15 @@
     url(../font/oswald/Oswald-Medium.woff) format('woff')
 }
 
+/* Everett */
+@font-face {
+    font-family: 'Everett Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('everettregular'),
+    url(../font/everett/everettregular.woff2) format('woff2')
+}
+
 /* Roboto */
 @font-face {
     font-family: 'Roboto';  
@@ -189,7 +198,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .count > li span {
-    font-family: 'Oswald Medium';
+    font-family: 'Everett Regular';
     display: inline-block;
     position: relative;
     line-height: 100px;
