@@ -272,6 +272,50 @@ a{text-decoration:none;font-weight:bold;color:#333}
     background-color: rgba(255, 255, 255, 1);
 }
 
+.main .cnt01 .share {
+    position: absolute;
+    bottom: 45px;
+    left: 40px;
+}
+
+.main .cnt01 .share > button {
+    display: block;
+    border: none;
+    width: 24px;
+    height: 24px;
+    outline: none;
+    background: url(../images/ico_share.svg) no-repeat;
+}
+
+.main .cnt01 .share .list {
+    position: absolute;
+    top: -170px;
+    left: 0;
+    width: 24px;
+}
+
+.main .cnt01 .share .list > a {
+    display: block;
+    width: 24px;
+    height: 24px;
+}
+
+.main .cnt01 .share .list > .instagram {
+    margin-bottom: 25px;
+    background: url(../images/ico_insta.svg) no-repeat;
+}
+
+
+.main .cnt01 .share .list > .youtube {
+    margin-bottom: 30px;
+    background: url(../images/ico_youtube.svg) no-repeat;
+}
+
+
+.main .cnt01 .share .list > .facebook {
+    background: url(../images/ico_facebook.svg) no-repeat;
+}
+
 .main .cnt02 {
     width: 100%;
     height: 440px;
