@@ -112,28 +112,25 @@ a{text-decoration:none;font-weight:bold;color:#333}
 
 .main .header {
     position: absolute;
-    top: 40px;
-    left: 50%;
+    top: 0;
     z-index: 10;
-    padding: 0 160px 0 210px;
+    border-bottom: 1px solid #45505d;
     width: 100%;
-    transform: translateX(-50%);
-    max-width: 1640px;
+    height: 70px;
+    line-height: 68px;
     text-align: center;
     color: #fff;
 }
 
 .main .header .logo {
     position: absolute;
-    top: 0;
+    top: 20px;
     left: 40px;
-    font-size: 30px;
-    font-weight: bold;
 }
 
 .main .header .logo a {
     display: block;
-    width: 150px;
+    width: 118px;
 }
 
 .main .header .logo a > img {
@@ -159,7 +156,6 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     top: 0;
     right: 40px;
-    line-height: 24px;
     font-family: Roboto;
     font-weight: 400;
     font-size: 20px;
@@ -168,7 +164,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 .main .cnt01 {
     position: relative;
     width: 100%;
-    background-image: url(../images/bg_cnt01.png);
+    background-image: url(../images/bg_cnt01.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -179,9 +175,19 @@ a{text-decoration:none;font-weight:bold;color:#333}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: -50px;
     width: 100%;
     text-align: center;
+}
+
+.main .cnt01 .count:before {
+    content: '';
+    position: absolute;
+    top: -160px;
+    left: 50%;
+    margin-left: -56px;
+    width: 112px;
+    height: 106px;
+    background: url(../images/ico_symbol.svg) no-repeat;
 }
 
 .main .cnt01 .count:after {
@@ -193,7 +199,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
 .main .cnt01 .count > li {
     display: inline-block;
     position: relative;
-    width: 200px;
+    width: 170px;
     text-align: center;
 }
 
@@ -201,7 +207,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     content: ':';
     position: absolute;
     top: -8px;
-    right: -6px;
+    right: -10px;
     font-size: 60px;
 }
 
@@ -214,16 +220,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     display: inline-block;
     position: relative;
     line-height: 100px;
-    font-size: 120px;
-}
-
-.main .cnt01 .count > li p {
-    font-family: 'EverettJana Regular';
-    margin-top: 10px;
-    font-family: Roboto;
-    font-weight: 500;
-    font-size: 20px;
-    color: #556276;
+    font-size: 125px;
 }
 
 .main .cnt01 .info {
@@ -231,20 +228,12 @@ a{text-decoration:none;font-weight:bold;color:#333}
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    margin-top: 220px;
+    margin-top: 110px;
     letter-spacing: 1px;
+    font-family: 'Roboto';
+    font-size: 30px;
     text-align: center;
     color: #fff;
-}
-
-.main .cnt01 .info .date {
-    font-family: 'Roboto';
-    font-size: 28px;
-}
-
-.main .cnt01 .info .text {
-    font-family: 'Roboto';
-    font-size: 16px;
 }
 
 .main .cnt01 .scroll {
@@ -427,13 +416,25 @@ a{text-decoration:none;font-weight:bold;color:#333}
     max-width: 1720px;
 }
 
-.main .cnt05 .visual {
-    margin: 280px auto 0;
-    width: 1000px;
+.main .cnt05 .visual01 {
+    width: 100%;
+    height: 1400px;
+    background-image: url(../images/bg_cnt05_01.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 853px 1078px;
+}
+
+.main .cnt05 .visual02 {
+    width: 100%;
+    height: 1330px;
+    background-image: url(../images/bg_cnt05_02.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1536px 856px;
 }
 
 .main .cnt05 .title {
-    margin-top: 200px;
     border-bottom: 2px solid #000;
     padding-bottom: 5px;
     font-family: Roboto;
