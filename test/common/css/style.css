@@ -273,13 +273,23 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .share {
+    overflow: hidden;
     position: absolute;
     bottom: 45px;
     left: 40px;
+    width: 24px;
+    height: 24px;
+    transition: height 0.3s;
+}
+
+.main .cnt01 .share.on {
+    height: 180px;
 }
 
 .main .cnt01 .share > button {
-    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
     border: none;
     width: 24px;
     height: 24px;
@@ -288,8 +298,9 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 .main .cnt01 .share .list {
+    overflow: hidden;
     position: absolute;
-    top: -170px;
+    top: 0;
     left: 0;
     width: 24px;
 }
@@ -298,12 +309,12 @@ a{text-decoration:none;font-weight:bold;color:#333}
     display: block;
     width: 24px;
     height: 24px;
-    transition: 0.2s;
+    transition: 0.3s;
     transform: scale(0);
     opacity: 0;
 }
 
-.main .cnt01 .share .list > a.on {
+.main .cnt01 .share.on .list > a {
     transform: scale(1);
     opacity: 1;
 }

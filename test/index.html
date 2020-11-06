@@ -69,7 +69,7 @@
             </article>
             <article class="cnt04"></article>
             <article class="cnt05">
-                <div class="visual01"><img src="./common/images/img_cnt05_01.png" alt="" /></div>
+                <div class="visual01"></div>
                 <div class="title">Iconnic</div>
                 <div class="info">
                     <div class="logo">
@@ -85,7 +85,7 @@
                     </dl>
                 </div>
                 <div class="title">Iconnic</div>
-                <div class="visual02"><img src="./common/images/img_cnt05_01.png" alt="" /></div>
+                <div class="visual02"></div>
             </article>
             <article class="cnt06"></article>
             <article class="cnt07"></article>
@@ -99,6 +99,7 @@
     <script class="source" type="text/javascript">
 
         var shareInterval = null;
+        var inOnShare = false;
 
         $(window).ready(function() {
             init();
@@ -110,17 +111,25 @@
             });
         });
 
-        $('.share > button').on('click', function() {
-            var idx = 3;
-            shareInterval = setInterval(function() {
-                $('.share').toggleClass('on');
-                idx--;
-                console.log(idx);
-                $('.share .list a').eq(idx).toggleClass('on');
-                if (idx <= 0) {
-                    clearInterval(shareInterval);
-                }
-            }, 100);
+        $('.share').hover(function() {
+
+            $('.share').addClass('on');
+
+            // if (!inOnShare) {
+            //     inOnShare = true;
+            //     var idx = 3;
+            //     shareInterval = setInterval(function() {
+            //         idx--;
+            //         console.log(idx);
+            //         $('.share .list a').eq(idx).addClass('on');
+            //         if (idx <= 0) {
+            //             clearInterval(shareInterval);
+            //             inOnShare = false;
+            //         }
+            //     }, 100);
+            // }
+        }, function() {
+            $('.share').removeClass('on');
         });
 
         function init (){
@@ -163,7 +172,7 @@
                 }, 500, function() {
                     $('.loading').hide();
                 });
-            }, 100);
+            }, 500);
         }
 
         // count
