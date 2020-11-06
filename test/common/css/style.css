@@ -1,3 +1,4 @@
+
 @charset "utf-8";
 
 /* Noto Sans */
@@ -6,10 +7,10 @@
     font-style: normal;
     font-weight: 100;
     src: local('Noto Sans Thin'), local('NotoSans-Thin'),
-    url(../font/notosans/NotoSansKR-Thin-Hestia.eot),
-    url(../font/notosans/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
-    url(../font/notosans/NotoSansKR-Thin-Hestia.woff) format('woff'),
-    url(../font/notosans/NotoSansKR-Thin-Hestia.otf) format('opentype');
+        url(../font/notosans/NotoSansKR-Thin-Hestia.eot),
+        url(../font/notosans/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
+        url(../font/notosans/NotoSansKR-Thin-Hestia.woff) format('woff'),
+        url(../font/notosans/NotoSansKR-Thin-Hestia.otf) format('opentype');
 }
 
 /* Everett */
@@ -18,86 +19,214 @@
     font-style: normal;
     font-weight: 300;
     src: local('Everett-Light'),
-    url(../font/everett/Everett-Light.woff2) format('woff2')
+        url(../font/everett/Everett-Light.woff2) format('woff2')
 }
+
 @font-face {
     font-family: 'Everett Regular';
     font-style: normal;
     font-weight: 400;
     src: local('Everett-Regular'),
-    url(../font/everett/Everett-Regular.woff2) format('woff2')
+        url(../font/everett/Everett-Regular.woff2) format('woff2')
 }
+
 @font-face {
     font-family: 'Everett Medium';
     font-style: normal;
     font-weight: 500;
     src: local('Everett-Medium'),
-    url(../font/everett/Everett-Medium.woff2) format('woff2')
+        url(../font/everett/Everett-Medium.woff2) format('woff2')
 }
+
 @font-face {
     font-family: 'EverettJana Regular';
     font-style: normal;
     font-weight: 400;
     src: local('EverettJana-Regular'),
-    url(../font/everett/EverettJana-Regular.woff2) format('woff2')
+        url(../font/everett/EverettJana-Regular.woff2) format('woff2')
 }
 
 /* Roboto */
 @font-face {
-    font-family: 'Roboto';  
-    font-style: normal;  
+    font-family: 'Roboto';
+    font-style: normal;
     font-weight: 100;
     src: url(../font/roboto/Roboto-Thin.woff2) format('woff2'),
-    url(../font/roboto/Roboto-Thin.woff) format('woff'),
-    url(../font/roboto/Roboto-Thin.otf) format('opentype');}
-@font-face {  
+        url(../font/roboto/Roboto-Thin.woff) format('woff'),
+        url(../font/roboto/Roboto-Thin.otf) format('opentype');
+}
+
+@font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 300;
     src: url(../font/roboto/Roboto-Light.woff2) format('woff2'),
-    url(../font/roboto/Roboto-Light.woff) format('woff'),
-    url(../font/roboto/Roboto-Light.otf) format('opentype');}
+        url(../font/roboto/Roboto-Light.woff) format('woff'),
+        url(../font/roboto/Roboto-Light.otf) format('opentype');
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     src: url(../font/roboto/Roboto-Regular.woff2) format('woff2'),
-    url(../font/roboto/Roboto-Regular.woff) format('woff'),
-    url(../font/roboto/Roboto-Regular.otf) format('opentype'); }
+        url(../font/roboto/Roboto-Regular.woff) format('woff'),
+        url(../font/roboto/Roboto-Regular.otf) format('opentype');
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     src: url(../font/roboto/Roboto-Medium.woff2) format('woff2'),
-    url(../font/roboto/Roboto-Medium.woff) format('woff'),
-    url(../font/roboto/Roboto-Medium.otf) format('opentype'); }
+        url(../font/roboto/Roboto-Medium.woff) format('woff'),
+        url(../font/roboto/Roboto-Medium.otf) format('opentype');
+}
+
 @font-face {
     font-family: 'Roboto';
     font-style: normal;
     font-weight: 700;
     src: url(../font/roboto/Roboto-Bold.woff2) format('woff2'),
-    url(../font/roboto/Roboto-Bold.woff) format('woff'),
-    url(../font/roboto/Roboto-Bold.otf) format('opentype'); }
+        url(../font/roboto/Roboto-Bold.woff) format('woff'),
+        url(../font/roboto/Roboto-Bold.otf) format('opentype');
+}
 
 /* reset */
-html{height:100%}
-body{overflow-x:hidden;overflow-y:auto;position:relative;margin:0;padding:0;height:100%;font-size:16px;line-height:1.6;font-family:'Noto Sans Korean', dotum, sans-serif}
-html, h1, h2, h3, h4, h5, h6, form, fieldset, img{margin:0;padding:0;border:0}
-h1, h2, h3, h4, h5, h6{font-size:16px;font-family:'Noto Sans Korean', dotum, sans-serif}
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section{display:block}
-ul, dl,dt,dd{margin:0;padding:0;list-style:none}
-legend{position:absolute;margin:0;padding:0;font-size:0;line-height:0;text-indent:-9999px;overflow:hidden}
-label, input, button, select, img{vertical-align:middle;font-size:16px}
-input, button{margin:0;padding:0;font-family:'Noto Sans Korean', dotum, sans-serif;font-size:15px;font-weight:bold}
-input[type="submit"]{cursor:pointer}
-button{cursor:pointer}
-textarea, select{font-family:'Noto Sans Korean', dotum, sans-serif;font-size:16px}
-select{margin:0}
-p{margin:0;padding:0;word-break:break-all;font-weight:bold}
-hr{display:none}
-pre{overflow-x:scroll}
-a{text-decoration:none;font-weight:bold;color:#333}
-*, :after, :before {
+html {
+    height: 100%
+}
+
+body {
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-size: 16px;
+    line-height: 1.6;
+    font-family: 'Noto Sans Korean', dotum, sans-serif
+}
+
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+fieldset,
+img {
+    margin: 0;
+    padding: 0;
+    border: 0
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: 16px;
+    font-family: 'Noto Sans Korean', dotum, sans-serif
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block
+}
+
+ul,
+dl,
+dt,
+dd {
+    margin: 0;
+    padding: 0;
+    list-style: none
+}
+
+legend {
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    font-size: 0;
+    line-height: 0;
+    text-indent: -9999px;
+    overflow: hidden
+}
+
+label,
+input,
+button,
+select,
+img {
+    vertical-align: middle;
+    font-size: 16px
+}
+
+input,
+button {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Korean', dotum, sans-serif;
+    font-size: 15px;
+    font-weight: bold
+}
+
+input[type="submit"] {
+    cursor: pointer
+}
+
+button {
+    cursor: pointer
+}
+
+textarea,
+select {
+    font-family: 'Noto Sans Korean', dotum, sans-serif;
+    font-size: 16px
+}
+
+select {
+    margin: 0
+}
+
+p {
+    margin: 0;
+    padding: 0;
+    word-break: break-all;
+    font-weight: bold
+}
+
+hr {
+    display: none
+}
+
+pre {
+    overflow-x: scroll
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #333
+}
+
+*,
+:after,
+:before {
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box;
@@ -133,7 +262,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     width: 118px;
 }
 
-.main .header .logo a > img {
+.main .header .logo a>img {
     display: block;
     width: 100%;
 }
@@ -144,7 +273,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     letter-spacing: 1px;
 }
 
-.main .header .text > img {
+.main .header .text>img {
     position: relative;
     top: -2px;
     vertical-align: middle;
@@ -174,6 +303,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%, -50%);
     width: 100%;
     text-align: center;
@@ -184,6 +314,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     top: -160px;
     left: 50%;
+    z-index: 10;
     margin-left: -56px;
     width: 112px;
     height: 106px;
@@ -196,14 +327,14 @@ a{text-decoration:none;font-weight:bold;color:#333}
     clear: both;
 }
 
-.main .cnt01 .count > li {
+.main .cnt01 .count>li {
     display: inline-block;
     position: relative;
     width: 170px;
     text-align: center;
 }
 
-.main .cnt01 .count > li::after {
+.main .cnt01 .count>li::after {
     content: ':';
     position: absolute;
     top: -8px;
@@ -211,11 +342,11 @@ a{text-decoration:none;font-weight:bold;color:#333}
     font-size: 60px;
 }
 
-.main .cnt01 .count > li:last-child::after {
+.main .cnt01 .count>li:last-child::after {
     display: none;
 }
 
-.main .cnt01 .count > li span {
+.main .cnt01 .count>li span {
     font-family: 'EverettJana Regular';
     display: inline-block;
     position: relative;
@@ -227,6 +358,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     top: 50%;
     left: 50%;
+    z-index: 10;
     transform: translate(-50%, -50%);
     margin-top: 110px;
     letter-spacing: 1px;
@@ -241,6 +373,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     bottom: 30px;
     left: 50%;
+    z-index: 10;
     transform: translateX(-50%);
     padding-bottom: 55px;
     color: #fff;
@@ -277,6 +410,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     position: absolute;
     bottom: 45px;
     left: 40px;
+    z-index: 10;
     width: 24px;
     height: 24px;
     transition: height 0.3s;
@@ -286,7 +420,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     height: 180px;
 }
 
-.main .cnt01 .share > button {
+.main .cnt01 .share>button {
     position: absolute;
     bottom: 0;
     left: 0;
@@ -305,7 +439,7 @@ a{text-decoration:none;font-weight:bold;color:#333}
     width: 24px;
 }
 
-.main .cnt01 .share .list > a {
+.main .cnt01 .share .list>a {
     display: block;
     width: 24px;
     height: 24px;
@@ -314,25 +448,35 @@ a{text-decoration:none;font-weight:bold;color:#333}
     opacity: 0;
 }
 
-.main .cnt01 .share.on .list > a {
+.main .cnt01 .share.on .list>a {
     transform: scale(1);
     opacity: 1;
 }
 
-.main .cnt01 .share .list > .instagram {
+.main .cnt01 .share .list>.instagram {
     margin-bottom: 25px;
     background: url(../images/ico_insta.svg) no-repeat;
 }
 
 
-.main .cnt01 .share .list > .youtube {
+.main .cnt01 .share .list>.youtube {
     margin-bottom: 30px;
     background: url(../images/ico_youtube.svg) no-repeat;
 }
 
 
-.main .cnt01 .share .list > .facebook {
+.main .cnt01 .share .list>.facebook {
     background: url(../images/ico_facebook.svg) no-repeat;
+}
+
+.main .cnt01 .main_video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
 .main .cnt02 {
@@ -563,22 +707,27 @@ a{text-decoration:none;font-weight:bold;color:#333}
     height: 1084px;
     background-image: url(../images/bg_cnt06.png);
 }
+
 .main .cnt07 {
     height: 1215px;
     background-image: url(../images/bg_cnt07.png);
 }
+
 .main .cnt08 {
     height: 1099px;
     background-image: url(../images/bg_cnt08.png);
 }
+
 .main .cnt09 {
     height: 1082px;
     background-image: url(../images/bg_cnt09.png);
 }
+
 .main .cnt10 {
     height: 1144px;
     background-image: url(../images/bg_cnt10.png);
 }
+
 .main .cnt11 {
     height: 933px;
     background-image: url(../images/bg_cnt11.png);
@@ -605,27 +754,27 @@ a{text-decoration:none;font-weight:bold;color:#333}
 }
 
 @keyframes rotate_img {
-	100% {
-    	transform: rotate(360deg);
+    100% {
+        transform: rotate(360deg);
     }
 }
 
 /*  
 @keyframes up_down {
-	0% {
-        bottom: 0px;
-    }
-	100% {
-        bottom: 22.5px;
-    }
+0% {
+    bottom: 0px;
+}
+100% {
+    bottom: 22.5px;
+}
 } */
 
 /* Tablet 
 @media all and (min-width:768px) and (max-width:1023px) {
-    
+
 } */
 
 /* mobile 
 @media all and (max-width:768px) {
-    
+
 } */
