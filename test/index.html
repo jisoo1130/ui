@@ -98,6 +98,8 @@
     </div>
     <script class="source" type="text/javascript">
 
+        var shareInterval = null;
+
         $(window).ready(function() {
             init();
         });
@@ -106,6 +108,19 @@
             $('.cnt01').css({
                 height: $(window).height()
             });
+        });
+
+        $('.share > button').on('click', function() {
+            var idx = 3;
+            shareInterval = setInterval(function() {
+                $('.share').toggleClass('on');
+                idx--;
+                console.log(idx);
+                $('.share .list a').eq(idx).toggleClass('on');
+                if (idx <= 0) {
+                    clearInterval(shareInterval);
+                }
+            }, 100);
         });
 
         function init (){
@@ -117,10 +132,8 @@
 
         // scroll
         function scroll (){
-
             var $scrollBar = $('.cnt01 .scroll .bar');
             var setMoving = null;
-
             setInterval(function() {
                 $scrollBar.animate({
                     height: "45px"
@@ -150,7 +163,7 @@
                 }, 500, function() {
                     $('.loading').hide();
                 });
-            }, 2000);
+            }, 100);
         }
 
         // count
