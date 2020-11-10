@@ -46,6 +46,7 @@
                         <a href="#" class="facebook"></a>
                     </div>
                 </div>
+                <button type="button" class="btn_sound"></button>
                 <video class="main_video" autoplay loop muted>
                     <source src="./common/video/video.mp4" type="video/mp4">
                     <p>IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</p>
@@ -106,114 +107,122 @@
     </div>
     <script class="source" type="text/javascript">
 
-        var shareInterval = null;
-        var inOnShare = false;
+        (function() {
 
-        $(window).ready(function () {
-            init();
-        });
+            var shareInterval = null;
+            var inOnShare = false;
 
-        $(window).on('resize', function () {
-            $('.cnt01').css({
-                height: $(window).height()
+            $(window).ready(function () {
+                init();
             });
-        });
 
-        $('.share').hover(function () {
+            $(window).on('resize', function () {
+                $('.cnt01').css({
+                    height: $(window).height()
+                });
+            });
 
-            $('.share').addClass('on');
+            $('.share').hover(function () {
 
-            // if (!inOnShare) {
-            //     inOnShare = true;
-            //     var idx = 3;
-            //     shareInterval = setInterval(function() {
-            //         idx--;
-            //         console.log(idx);
-            //         $('.share .list a').eq(idx).addClass('on');
-            //         if (idx <= 0) {
-            //             clearInterval(shareInterval);
-            //             inOnShare = false;
-            //         }
-            //     }, 100);
-            // }
-        }, function () {
-            $('.share').removeClass('on');
-        });
+                $('.share').addClass('on');
 
-        function init() {
-            scroll();
-            loading();
-            count();
-            wow();
-        }
+                // if (!inOnShare) {
+                //     inOnShare = true;
+                //     var idx = 3;
+                //     shareInterval = setInterval(function() {
+                //         idx--;
+                //         console.log(idx);
+                //         $('.share .list a').eq(idx).addClass('on');
+                //         if (idx <= 0) {
+                //             clearInterval(shareInterval);
+                //             inOnShare = false;
+                //         }
+                //     }, 100);
+                // }
+            }, function () {
+                $('.share').removeClass('on');
+            });
 
-        // scroll
-        function scroll() {
-            var $scrollBar = $('.cnt01 .scroll .bar');
-            var setMoving = null;
-            setInterval(function () {
-                $scrollBar.animate({
-                    height: "45px"
-                }, 500, 'easeOutCubic', function () {
+            $('.btn_sound').on('click', function() {
+                $(this).toggleClass('on');
+            });
+
+            function init() {
+                scroll();
+                loading();
+                count();
+                wow();
+            }
+
+            // scroll
+            function scroll() {
+                var $scrollBar = $('.cnt01 .scroll .bar');
+                var setMoving = null;
+                setInterval(function () {
                     $scrollBar.animate({
-                        top: "80px"
+                        height: "45px"
                     }, 500, 'easeOutCubic', function () {
-                        $scrollBar.css({
-                            top: '35px',
-                            height: '0'
+                        $scrollBar.animate({
+                            top: "80px"
+                        }, 500, 'easeOutCubic', function () {
+                            $scrollBar.css({
+                                top: '35px',
+                                height: '0'
+                            });
                         });
                     });
-                });
-            }, 1100);
-        }
-
-        // loading
-        function loading() {
-
-            $('body').css('overflow', 'hidden');
-            $('.cnt01').height($(window).height());
-            setTimeout(function () {
-                $('body').css('overflow', 'auto');
-                $('body').scrollTop(0);
-                $('.loading').animate({
-                    opacity: 0
-                }, 500, function () {
-                    $('.loading').hide();
-                });
-            }, 100);
-        }
-
-        // count
-        function count() {
-            var now = new Date();
-            var day = now.getDate();
-            var month = now.getMonth() + 1;
-            var year = now.getFullYear() + 1;
-            var nextyear = '11/16/2020 00:00:00';
-
-            $('.main .count').countdown({
-                date: nextyear,
-                offset: +2,
-                day: 'Day',
-                days: 'Days',
-                hideOnComplete: true
-            }, function (container) {
-                console.log('Done!');
-            });
-        }
-
-        // wow
-        function wow() {
-            var wow = new WOW({
-                animateClass: 'animated',
-                offset: 100,
-                callback: function (box) {
-                    console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
-                }
+                }, 1100);
             }
-            );
-            wow.init();
-        }
+
+            // loading
+            function loading() {
+
+                $('body').css('overflow', 'hidden');
+                $('.cnt01').height($(window).height());
+                setTimeout(function () {
+                    $('body').css('overflow', 'auto');
+                    $('body').scrollTop(0);
+                    $('.loading').animate({
+                        opacity: 0
+                    }, 500, function () {
+                        $('.loading').hide();
+                    });
+                }, 100);
+            }
+
+            // count
+            function count() {
+                var now = new Date();
+                var day = now.getDate();
+                var month = now.getMonth() + 1;
+                var year = now.getFullYear() + 1;
+                var nextyear = '11/16/2020 00:00:00';
+
+                $('.main .count').countdown({
+                    date: nextyear,
+                    offset: +2,
+                    day: 'Day',
+                    days: 'Days',
+                    hideOnComplete: true
+                }, function (container) {
+                    console.log('Done!');
+                });
+            }
+
+            // wow
+            function wow() {
+                var wow = new WOW({
+                    animateClass: 'animated',
+                    offset: 100,
+                    callback: function (box) {
+                        console.log("WOW: animating <" + box.tagName.toLowerCase() + ">")
+                    }
+                }
+                );
+                wow.init();
+            }
+
+        })();
 
     </script>
 

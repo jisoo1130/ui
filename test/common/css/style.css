@@ -293,7 +293,6 @@ a {
 .main .cnt01 {
     position: relative;
     width: 100%;
-    background-image: url(../images/bg_cnt01.jpg);
     background-position: center;
     background-size: cover;
     color: #fff;
@@ -431,6 +430,10 @@ a {
     background: url(../images/share.svg) no-repeat;
 }
 
+.main .cnt01 .share.on>button {
+    background: url(../images/ico_share_hover.svg) no-repeat;
+}
+
 .main .cnt01 .share .list {
     overflow: hidden;
     position: absolute;
@@ -467,6 +470,22 @@ a {
 
 .main .cnt01 .share .list>.facebook {
     background: url(../images/ico_facebook.svg) no-repeat;
+}
+
+.main .cnt01 .btn_sound {
+    position: absolute;
+    bottom: 28px;
+    right: 40px;
+    z-index: 10;
+    border: none;
+    width: 22px;
+    height: 26px;
+    background: url(../images/ico_stop.svg) no-repeat 0 0/22px 26px;
+    outline: none;
+}
+
+.main .cnt01 .btn_sound.on {
+    background: url(../images/ico_play.svg) no-repeat 0 0/22px 26px;
 }
 
 .main .cnt01 .main_video {
@@ -695,6 +714,7 @@ a {
     height: 1283px;
     background-image: url(../images/bg_cnt16.png);
 }
+
 .main .cnt17 {
     height: 1322px;
     background-image: url(../images/bg_cnt17.png);
