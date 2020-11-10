@@ -428,7 +428,7 @@ a {
     width: 24px;
     height: 24px;
     outline: none;
-    background: url(../images/ico_share.svg) no-repeat;
+    background: url(../images/share.svg) no-repeat;
 }
 
 .main .cnt01 .share .list {
@@ -481,8 +481,8 @@ a {
 
 .main .cnt02 {
     width: 100%;
-    height: 440px;
-    background-color: #000;
+    height: 364px;
+    text-align: center;
 }
 
 .main .cnt02 .info {
@@ -490,127 +490,60 @@ a {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    box-sizing: border-box;
-    padding: 0 20px 0 430px;
-    max-width: 1420px;
     width: 100%;
-    font-weight: bold;
-    color: #fff;
+    font-family: 'Roboto';
 }
 
-.main .cnt02 .info dt {
-    position: absolute;
-    top: 0;
-    left: 20px;
-    line-height: 50px;
-    font-family: Roboto;
+.main .cnt02 .info .main_title {
+    letter-spacing: 1px;
+    font-size: 32px;
     font-weight: 500;
-    font-size: 35px;
 }
 
-.main .cnt02 .info dd {
-    width: 100%;
-    font-size: 22px;
+.main .cnt02 .info .sub_title {
+    margin-top: 5px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main .cnt02 .info .text {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
 }
 
 .main .cnt03 {
     position: relative;
     margin: 0 auto;
+    padding-bottom: 120px;
     max-width: 1920px;
-    height: 1270px;
+    width: 100%;
+}
+
+.main .cnt03:after {
+    content: '';
+    display: block;
+    clear: both;
 }
 
 .main .cnt03 .item {
-    position: absolute;
+    float: left;
+    width: 32.5%;
+    margin: 1.25% 1.25% 0 0;
 }
 
-.main .cnt03 .item:nth-of-type(1) {
-    top: 230px;
-    left: 50%;
-    margin-left: -952px;
+.main .cnt03 .item:nth-child(3),
+.main .cnt03 .item:nth-child(6) {
+    margin-right: 0;
 }
 
-.main .cnt03 .item:nth-of-type(2) {
-    top: 150px;
-    left: 50%;
-    margin-left: -690px;
-    z-index: 10;
-}
-
-.main .cnt03 .item:nth-of-type(3) {
-    top: 605px;
-    left: 50%;
-    margin-left: -585px;
-    z-index: 10;
-}
-
-.main .cnt03 .item:nth-of-type(4) {
-    top: 216px;
-    left: 50%;
-    margin-left: -325px;
-}
-
-.main .cnt03 .item:nth-of-type(5) {
-    top: 340px;
-    left: 50%;
-    margin-left: 155px;
-    z-index: 10;
-}
-
-.main .cnt03 .item:nth-of-type(6) {
-    top: 185px;
-    left: 50%;
-    margin-left: 510px;
-    z-index: 20;
-}
-
-.main .cnt03 .item:nth-of-type(7) {
-    top: 414px;
-    left: 50%;
-    margin-left: 672px;
-}
-
-.main .cnt03 .circle {
-    position: absolute;
-    top: 95px;
-    left: 50%;
-    margin-left: 422px;
-    width: 200px;
-    height: 200px;
-}
-
-.main .cnt03 .circle img {
-    animation: rotate_img 20s linear infinite;
-    transform-origin: 50% 50%;
+.main .cnt03 .item img {
     width: 100%;
-    height: 100%;
-}
-
-.main .cnt03 .info {
-    position: absolute;
-    bottom: 95px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-}
-
-.main .cnt03 .info dt {
-    font-family: Roboto;
-    font-size: 30px;
-    font-weight: 500;
-    letter-spacing: 1px;
-}
-
-.main .cnt03 .info dd {
-    margin-top: 20px;
-    letter-spacing: -1px;
-    font-size: 22px;
-    font-weight: bold;
 }
 
 .main .cnt04 {
     width: 100%;
-    height: 865px;
+    height: 1000px;
     background-image: url(../images/bg_cnt04.png);
     background-position: center;
     background-size: cover;
@@ -619,120 +552,153 @@ a {
 .main .cnt05 {
     margin: 0 auto;
     box-sizing: border-box;
-    padding: 0 40px;
-    max-width: 1720px;
-}
-
-.main .cnt05 .visual01 {
-    width: 100%;
-    height: 1400px;
-    background-image: url(../images/bg_cnt05_01.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 853px 1078px;
-}
-
-.main .cnt05 .visual02 {
-    width: 100%;
-    height: 1330px;
-    background-image: url(../images/bg_cnt05_02.png);
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 1536px 856px;
-}
-
-.main .cnt05 .title {
-    border-bottom: 2px solid #000;
-    padding-bottom: 5px;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
+    padding: 0 20px;
+    max-width: 1644px;
+    font-family: 'Roboto';
+    text-align: center;
 }
 
 .main .cnt05 .info {
-    position: relative;
-    padding: 155px 0 280px 540px;
+    padding-top: 75px;
+    height: 260px;
 }
 
-.main .cnt05 .info:after {
+.main .cnt05 .info .title {
+    letter-spacing: 1px;
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.main .cnt05 .info .text {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main .cnt05 .info .text {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main .cnt05 .visual:after {
     content: '';
     display: block;
     clear: both;
 }
 
-.main .cnt05 .info .logo {
-    position: absolute;
-    top: 210px;
-    left: 100px;
-}
-
-.main .cnt05 .info .text {
+.main .cnt05 .visual .item {
     float: left;
-    padding-left: 20px;
-    width: 50%;
+    width: 49.5%;
+    margin-right: 1%;
 }
 
-.main .cnt05 .info .text dt {
-    border-bottom: 1px solid #000;
-    padding-bottom: 5px;
-    font-family: Roboto;
-    font-size: 25px;
-    font-weight: 500;
+.main .cnt05 .visual > .item:last-child {
+    margin-right: 0;
 }
 
-.main .cnt05 .info .text dd {
-    margin-top: 10px;
-    font-size: 24px;
-    line-height: 44px;
-    font-weight: bold;
-}
-
-.main .cnt05 .info .text:nth-of-type(1) dd {
-    font-family: Roboto;
-    font-weight: 300;
-}
-
-.main .cnt06,
-.main .cnt07,
-.main .cnt08,
-.main .cnt09,
-.main .cnt10,
-.main .cnt11 {
+.main .cnt05 .visual > .item img {
     width: 100%;
-    background-position: center;
-    background-size: cover;
 }
 
-.main .cnt06 {
-    height: 1084px;
-    background-image: url(../images/bg_cnt06.png);
+.main .cnt05 .item:nth-child(3),
+.main .cnt05 .item:nth-child(6) {
+    margin-right: 0;
+}
+
+.main .cnt06 .info {
+    padding: 0 20px;
+    margin: 0 auto;
+    max-width: 1644px;
+}
+
+.main .cnt06 .info .title {
+    margin-top: 220px;
+    font-size: 30px;
+    font-weight: 500;
+    font-family: 'Roboto';
+    border-bottom: 2px solid #000;
+}
+
+.main .cnt06 .info img {
+    margin-top: 220px;
+    width: 100%;
 }
 
 .main .cnt07 {
-    height: 1215px;
-    background-image: url(../images/bg_cnt07.png);
+    margin: 170px auto 0;
+    max-width: 1920px;
+}
+
+.main .cnt07 img {
+    width: 100%;
+}
+
+
+.main .cnt08,
+.main .cnt09,
+.main .cnt10,
+.main .cnt11,
+.main .cnt12,
+.main .cnt13,
+.main .cnt14,
+.main .cnt15,
+.main .cnt16,
+.main .cnt17 {
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 .main .cnt08 {
-    height: 1099px;
+    height: 1280px;
     background-image: url(../images/bg_cnt08.png);
 }
 
 .main .cnt09 {
-    height: 1082px;
+    height: 1280px;
     background-image: url(../images/bg_cnt09.png);
 }
 
 .main .cnt10 {
-    height: 1144px;
+    height: 1280px;
     background-image: url(../images/bg_cnt10.png);
 }
 
 .main .cnt11 {
-    height: 933px;
+    height: 1280px;
     background-image: url(../images/bg_cnt11.png);
 }
 
+.main .cnt12 {
+    height: 962px;
+    background-image: url(../images/bg_cnt12.png);
+}
+
+.main .cnt13 {
+    height: 1280px;
+    background-image: url(../images/bg_cnt13.png);
+}
+
+.main .cnt14 {
+    height: 962px;
+    background-image: url(../images/bg_cnt14.png);
+}
+
+.main .cnt15 {
+    height: 1269px;
+    background-image: url(../images/bg_cnt15.png);
+}
+
+.main .cnt16 {
+    height: 1283px;
+    background-image: url(../images/bg_cnt16.png);
+}
+.main .cnt17 {
+    height: 1322px;
+    background-image: url(../images/bg_cnt17.png);
+}
 
 .loading {
     position: fixed;
