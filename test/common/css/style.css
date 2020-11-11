@@ -667,12 +667,12 @@ a {
     width: 100%;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed;
 }
 
 .main .cnt08 {
     height: 1280px;
     background-image: url(../images/bg_cnt08.png);
+    background-attachment: fixed;
 }
 
 .main .cnt09 {
