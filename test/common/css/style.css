@@ -727,13 +727,63 @@ a {
     font-weight: 400;
 }
 
-
 .main .cnt09 .visual {
-    font-size: 20px;
-    font-weight: 400;
+    margin: 0 auto;
+    padding: 0 10px 200px;
+    max-width: 1530px;
 }
 
-.main .cnt10,
+.main .cnt09 .visual> img {
+    width: 100%;
+}
+
+
+.main .cnt10:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.main .cnt10 > div {
+    position: relative;
+    float: left;
+    height: 1100px;
+    font-weight: 600;
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+.main .cnt10 > div:nth-child(1) {
+    width: 45%;
+    background-color: #011e40;
+    color: #c1c5c8;
+}
+
+.main .cnt10 > div:nth-child(2) {
+    width: 25%;
+    background-color: #c1c5c8;
+    color: #101920;
+}
+
+.main .cnt10 > div:nth-child(3) {
+    width: 20%;
+    background-color: #011e40;
+    color: #fff;
+}
+
+.main .cnt10 > div:nth-child(4) {
+    width: 10%;
+    background-color: #fff;
+    color: #101920;
+}
+
+.main .cnt10 > div span {
+    position: absolute;
+    top: 20px;
+    right: -30px;
+    transform: rotate(90deg);
+}
+
 .main .cnt11,
 .main .cnt12,
 .main .cnt13,
@@ -744,11 +794,6 @@ a {
     width: 100%;
     background-position: center;
     background-size: cover;
-}
-
-.main .cnt10 {
-    height: 1280px;
-    background-image: url(../images/bg_cnt10.png);
 }
 
 .main .cnt11 {
