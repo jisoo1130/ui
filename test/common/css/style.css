@@ -767,14 +767,14 @@ a {
 
 .main .cnt10 > div:nth-child(3) {
     width: 20%;
-    background-color: #011e40;
+    background-color: #101921;
     color: #fff;
 }
 
 .main .cnt10 > div:nth-child(4) {
     width: 10%;
     background-color: #fff;
-    color: #101920;
+    color: ##101921;
 }
 
 .main .cnt10 > div span {
@@ -871,7 +871,235 @@ a {
 
 } */
 
-/* mobile 
+/* mobile */ 
 @media all and (max-width:768px) {
 
-} */
+    .main .header {
+        height: 60px;
+    }
+
+    .main .header .copy {
+        display: none;
+    }
+
+    .main .header .logo {
+        top: 20px;
+        left: 15px;
+    }
+    .main .header .logo a {
+        width: 80px;
+    }
+
+    .main .header .text {
+        display: none;
+    }
+
+    .main .cnt01 .share {
+        top: 18px;
+        right: 15px;
+        left: auto;
+    }
+    .main .cnt01 .count:before {
+        top: -60px;
+        margin-left: -33px;
+        width: 66px;
+        height: 66px;
+    }
+
+    .main .cnt01 .count>li {
+        width: 70px;
+    }
+
+    .main .cnt01 .count>li::after {
+        top: 30px;
+        right: -2px;
+        font-size: 20px;
+    }
+
+    .main .cnt01 .count>li span {
+        font-size: 50px;
+    }
+
+    .main .cnt01 .info {
+        margin-top: 40px;
+        font-size: 12px;
+
+    }
+
+    .main .cnt01 .scroll {
+        bottom: 0;
+    }
+
+    .main .cnt01 .sound {
+        display: none;
+    }
+
+    .main .cnt02 .info {
+        padding: 65px 20px;
+    }
+
+    .main .cnt02 .info .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .cnt02 .info .text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main .cnt03 {
+        padding: 60px 0 0;
+    }
+
+    .main .cnt03 .item {
+        margin-right: 0;
+        width: 49.25%;
+    }
+
+    .main .cnt03 .item:nth-child(2n) {
+        margin-left: 1.25%;
+    }
+
+    .main .cnt04 .info {
+        padding: 65px 20px;
+    }
+
+    .main .cnt04 .info .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .cnt04 .info .text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main .cnt05 {
+        height: 420px;
+    }
+
+    .main .cnt06 .info {
+        padding: 65px 20px;
+    }
+
+    .main .cnt06 .info .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .cnt06 .info .text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main .cnt06 .visual > img {
+        padding: 0 20px;
+        width: 100%;
+    }
+
+    .main .cnt06 .visual > img:last-child {
+        padding-top: 20px;
+        width: 100%;
+    }
+
+    .main .cnt06 .visual {
+        padding-bottom: 60px;
+    }
+
+    .main .cnt07 .info {
+        padding: 65px 20px;
+    }
+
+    .main .cnt07 .info .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .cnt07 .info .text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main .cnt08 .list {
+        padding-bottom: 90px;
+    }
+
+    .main .cnt08 .list .item {
+        margin-top: 20px;
+        padding-left: 0;
+    }
+
+    .main .cnt08 .list .item dt {
+        position: relative;
+        top: 0;
+        left: 0;
+        font-weight: 600;
+    }
+
+    .main .cnt08 .list .item dd {
+        font-size: 22px;
+    }
+
+    .main .cnt09 .info {
+        padding: 65px 20px;
+    }
+
+    .main .cnt09 .info .title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .main .cnt09 .info .text {
+        margin-top: 15px;
+        font-size: 13px;
+        text-align: center;
+    }
+
+    .main .cnt09 .visual {
+        padding-bottom: 50px;
+    }
+    .main .cnt10 > div:nth-child(1) {
+        width: 100%;
+    }
+
+    .main .cnt10 > div:nth-child(2) {
+        width: 100%;
+    }
+
+    .main .cnt10 > div:nth-child(3) {
+        width: 100%;
+    }
+
+    .main .cnt10 > div:nth-child(4) {
+        width: 100%;
+    }
+
+    .main .cnt10 > div span {
+        top: 0;
+        left: 0;
+        right: auto;
+        transform: rotate(0deg);
+    }
+
+
+}

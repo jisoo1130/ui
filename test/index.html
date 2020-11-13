@@ -46,7 +46,10 @@
                         <a href="#" class="facebook"></a>
                     </div>
                 </div>
-                <button type="button" class="btn_sound"></button>
+                <div class="sound">
+                    <audio src="./common/video/audio.mp3" width='400' controls autoplay></audio>
+                    <button type="button" class="btn_sound"></button>
+                </div>
                 <video class="main_video" autoplay loop muted>
                     <source src="./common/video/video.mp4" type="video/mp4">
                     <p>IE 8 이하는 비디오가 나오지 않습니다. IE 버전을 업데이트 하시길 바랍니다.</p>
@@ -141,6 +144,15 @@
             var shareInterval = null;
             var inOnShare = false;
 
+            var audio = new Audio();
+            audio.src = "./common/video/audio.mp3";
+
+            $('.btn_sound').on('click', function() {
+                
+            })
+
+
+
             $(window).ready(function () {
                 init();
             });
@@ -155,19 +167,6 @@
 
                 $('.share').addClass('on');
 
-                // if (!inOnShare) {
-                //     inOnShare = true;
-                //     var idx = 3;
-                //     shareInterval = setInterval(function() {
-                //         idx--;
-                //         console.log(idx);
-                //         $('.share .list a').eq(idx).addClass('on');
-                //         if (idx <= 0) {
-                //             clearInterval(shareInterval);
-                //             inOnShare = false;
-                //         }
-                //     }, 100);
-                // }
             }, function () {
                 $('.share').removeClass('on');
             });
@@ -216,7 +215,7 @@
                     }, 500, function () {
                         $('.loading').hide();
                     });
-                }, 2000);
+                }, 100);
             }
 
             // count
