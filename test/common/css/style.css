@@ -729,14 +729,13 @@ a {
 
 .main .cnt09 .visual {
     margin: 0 auto;
-    padding: 0 10px 200px;
+    padding: 0 20px 200px;
     max-width: 1530px;
 }
 
 .main .cnt09 .visual> img {
     width: 100%;
 }
-
 
 .main .cnt10:after {
     content: '';
@@ -746,7 +745,7 @@ a {
 
 .main .cnt10 > div {
     position: relative;
-    float: left;
+    float: right;
     height: 1100px;
     font-weight: 600;
     font-family: 'Roboto';
@@ -754,27 +753,21 @@ a {
 }
 
 .main .cnt10 > div:nth-child(1) {
-    width: 45%;
-    background-color: #011e40;
-    color: #c1c5c8;
+    width: 10%;
+    background-color: #fff;
+    color: #101921;
 }
 
 .main .cnt10 > div:nth-child(2) {
-    width: 25%;
-    background-color: #c1c5c8;
-    color: #101920;
-}
-
-.main .cnt10 > div:nth-child(3) {
     width: 20%;
     background-color: #101921;
     color: #fff;
 }
 
-.main .cnt10 > div:nth-child(4) {
-    width: 10%;
-    background-color: #fff;
-    color: ##101921;
+.main .cnt10 > div:nth-child(3) {
+    width: 25%;
+    background-color: #c1c5c8;
+    color: #101920;
 }
 
 .main .cnt10 > div span {
@@ -782,6 +775,12 @@ a {
     top: 20px;
     right: -30px;
     transform: rotate(90deg);
+}
+
+.main .cnt10 > div:nth-child(4) {
+    width: 45%;
+    background-color: #011e40;
+    color: #c1c5c8;
 }
 
 .main .cnt11,
@@ -1095,10 +1094,71 @@ a {
     }
 
     .main .cnt10 > div span {
-        top: 0;
+        top: -10px;
         left: 0;
         right: auto;
         transform: rotate(0deg);
+    }
+
+    .main .cnt10 > div:nth-child(1) {
+        height: 80px;
+    }
+
+    .main .cnt10 > div:nth-child(2) {
+        height: 140px;
+    }
+
+    .main .cnt10 > div:nth-child(3) {
+        height: 180px;
+    }
+
+    .main .cnt10 > div:nth-child(4) {
+        height: 280px;
+    }
+
+    .main .cnt11 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt12 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt13 {
+        height: 0;
+        padding-top: 50%;
+    }
+
+    .main .cnt14 {
+        height: 0;
+        padding-top: 50%;
+    }
+
+    .main .cnt15 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt16 {
+        height: 0;
+        padding-top: 50%;
+    }
+
+    .main .cnt17 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt18 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt19 {
+        height: 0;
+        padding-top: 66%;
     }
 
 
