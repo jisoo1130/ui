@@ -633,6 +633,10 @@ a {
     width: 50%;
 }
 
+.main .cnt07 {
+    background-color: #000;
+
+}
 .main .cnt07 .info {
     position: relative;
     margin: 0 auto;
@@ -640,7 +644,6 @@ a {
     max-width: 1640px;
     width: 100%;
     font-family: 'Roboto';
-    background-color: #000;
     color: #fff;
 }
 
@@ -657,23 +660,79 @@ a {
     font-weight: 400;
 }
 
-.main .cnt07 .info .text {
-    font-size: 20px;
-    font-weight: 400;
+.main .cnt08 {
+    background-color: #000;
 }
 
 .main .cnt08 .list {
     margin: 0 auto;
     padding: 0 10px 200px;
+    box-sizing: border-box;
     max-width: 1640px;
 }
 
+.main .cnt08 .list .item {
+    position: relative;
+    padding-left: 270px;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+
+.main .cnt08 .list .item dt {
+    position: absolute;
+    top: 25px;
+    left: 10px;
+}
+
+.main .cnt08 .list .item dd {
+    font-weight: 500;
+    font-size: 80px;
+}
+
+.main .cnt08 .list .item:nth-child(1) {
+    color: #fff;
+}
+
+.main .cnt08 .list .item:nth-child(2) {
+    color: #9ea2a5;
+}
+
+.main .cnt08 .list .item:nth-child(3) {
+    color: #585d63;
+}
+
+.main .cnt08 .list .item:nth-child(4) {
+    color: #333a42;
+}
+
+.main .cnt09 .info {
+    position: relative;
+    margin: 0 auto;
+    padding: 100px 20px 100px 270px;
+    max-width: 1640px;
+    width: 100%;
+    font-family: 'Roboto';
+}
+
+.main .cnt09 .info .title {
+    position: absolute;
+    top: 100px;
+    left: 20px;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.main .cnt09 .info .text {
+    font-size: 20px;
+    font-weight: 400;
+}
 
 
+.main .cnt09 .visual {
+    font-size: 20px;
+    font-weight: 400;
+}
 
-
-.main .cnt08,
-.main .cnt09,
 .main .cnt10,
 .main .cnt11,
 .main .cnt12,
@@ -685,17 +744,6 @@ a {
     width: 100%;
     background-position: center;
     background-size: cover;
-}
-
-.main .cnt08 {
-    height: 1280px;
-    background-image: url(../images/bg_cnt08.png);
-    background-attachment: fixed;
-}
-
-.main .cnt09 {
-    height: 1280px;
-    background-image: url(../images/bg_cnt09.png);
 }
 
 .main .cnt10 {
