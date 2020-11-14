@@ -134,7 +134,9 @@
             <article class="cnt14"></article>
             <article class="cnt15"></article>
             <article class="cnt16"></article>
-            <article class="cnt17"></article>
+            <article class="cnt17">
+                <span class="line"></span>
+            </article>
         </section>
     </div>
     <script class="source" type="text/javascript">
@@ -149,9 +151,12 @@
 
             $('.btn_sound').on('click', function() {
                 
-            })
+            });
 
-
+            $('.main .line').animate({
+                left: '-999999999px'
+            }, 29999999999, 'linear');
+                
 
             $(window).ready(function () {
                 init();

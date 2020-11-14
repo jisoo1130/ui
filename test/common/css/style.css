@@ -830,6 +830,16 @@ a {
     background-image: url(../images/bg_cnt17.png);
 }
 
+.main .line {
+    position: absolute;
+    bottom: 50%;
+    left: 0;
+    z-index: 50;
+    width: 99999999px;
+    height: 57px;
+    background: url(../images/text-line.png) repeat-x 0 0/auto 57px;
+}
+
 .loading {
     position: fixed;
     top: 0;
@@ -869,6 +879,9 @@ a {
 @media all and (min-width:768px) and (max-width:1023px) {
 
 } */
+
+
+
 
 /* mobile */ 
 @media all and (max-width:768px) {
