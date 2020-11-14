@@ -515,6 +515,7 @@ a {
 
 .main .cnt02 .info {
     position: relative;
+    margin: 0 auto;
     padding: 100px 20px 100px 270px;
     max-width: 1640px;
     width: 100%;
@@ -799,7 +800,12 @@ a {
 .main .cnt14,
 .main .cnt15,
 .main .cnt16,
-.main .cnt17 {
+.main .cnt17,
+.main .cnt18,
+.main .cnt19,
+.main .cnt20,
+.main .cnt21,
+.main .cnt22 {
     width: 100%;
     background-position: center;
     background-size: cover;
@@ -838,6 +844,21 @@ a {
 .main .cnt17 {
     height: 1322px;
     background-image: url(../images/bg_cnt17.png);
+}
+
+.main .cnt18 {
+    height: 1280px;
+    background-image: url(../images/bg_cnt18.png);
+}
+
+.main .cnt22 {
+    height: 1280px;
+    background-image: url(../images/bg_cnt22.png);
+}
+
+.main .cnt20 {
+    height: 3380px;
+    background-image: url(../images/bg_cnt20.png);
 }
 
 .main .line {
@@ -1182,6 +1203,21 @@ a {
     .main .cnt19 {
         height: 0;
         padding-top: 66%;
+    }
+
+    .main .cnt21 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt22 {
+        height: 0;
+        padding-top: 66%;
+    }
+
+    .main .cnt20 {
+        height: 0;
+        padding-top: 156%;
     }
 
 
