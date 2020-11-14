@@ -148,14 +148,20 @@
 
             var audio = new Audio();
             audio.src = "./common/video/audio.mp3";
+            audio.pause();
 
             $('.btn_sound').on('click', function() {
-                
+                $('.sound').toggleClass('on');
+                if ($('.sound').hasClass('on')) {
+                    audio.play();
+                } else {
+                    audio.pause();
+                }
             });
 
             $('.main .line').animate({
-                left: '-999999999px'
-            }, 29999999999, 'linear');
+                left: '-99999999px'
+            }, 2999999999, 'linear');
                 
 
             $(window).ready(function () {
