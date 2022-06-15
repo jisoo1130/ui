@@ -1,0 +1,217 @@
+/* wrap */
+#wrap { width: 100%; overflow: hidden; background: #f7f7f7; }
+#header { width: 100%; overflow: hidden; }
+#footer { width: 100%; overflow: hidden; }
+
+/* main_portfolio */
+.main_portfolio { width: 100%; overflow: hidden; background:url(../images/ux/ux_title_bg.png) top center; background-repeat: no-repeat; }
+.main_portfolio_con { width: 100%; }
+.main_portfolio_con h1 span { color: #339966; }
+
+/* ux_font_style */
+.ux_h1 { font-family: 'Comfortaa', cursive; font-size: 2rem; line-height: 2.2rem; text-align: center; font-weight: 400; }
+.ux_h2 { font-size: 1rem; line-height: 1.2rem; font-weight: 400; }
+.ux_txt { font-size: .8rem; line-height: 1.2rem; font-weight: 400; color: #666; }
+
+/* ux_title */
+.ux_title { width: 100%; margin-top: 330px; }
+.ux_title_logo{ margin: 0 auto; width: 340px; }
+.ux_title_logo img{ width: 340px; }
+.ux_title_txt { width: 80%; margin: 30px 10%; text-align: center; }
+.ux_title_txt p { line-height: 1.2rem; }
+.ux_title_txt div { width: 60%; margin: 0 20%; padding-top: 14px; }
+.ux_title_txt div ul { float: left; width: 30%; }
+.ux_title_txt div ul:nth-child(1) { margin-left: 20%; }
+.ux_title_txt div ul:nth-child(2) { margin-right: 20%; }
+.ux_title_txt div ul li:nth-child(1) { font-size: .9rem; line-height: 1.4rem; font-weight: 400; color: #333; }
+
+/* ux_research */
+.ux_research { width: 100%; margin-top: 400px; }
+.ux_research h1 {}
+.ux_research_txt { float: left; width: 48%; margin: 80px 2% 0 0; text-align: right; }
+.ux_research_txt h2 {}
+.ux_research_txt p:nth-child(2) { font-size: 1.4rem; line-height: 2.2rem; font-weight: 400; color: #333; }
+.ux_research_txt p:nth-child(3) { margin-top: 20px; }
+.ux_research_img { float: left; width: 48%; margin: 0 0 0 2%; }
+.ux_research_img img { margin: 0 10%; width: 80%; max-width: 600px; }
+
+/* ux_guideline */
+.ux_guideline { position: relative; width: 80%; margin: 500px 10% 0 10%; }
+.ux_guideline_txt { text-align: center; margin-top: 50px; }
+.ux_guideline_txt div:nth-child(1) { float: left; width: 49%; margin-right: 1%; }
+.ux_guideline_txt div:nth-child(2) { float: left; width: 49%; margin-left: 1%; }
+.ux_guideline_txt h2 { margin-bottom: 10px; }
+.ux_clock_img { position: absolute; width: 450px; top: 100px; left: 50%; margin-left: -920px; z-index: 10; }
+.ux_clock_img img { width: 450px; }
+
+/* ux_interveiw */
+.ux_interveiw { width: 70%; margin: 480px 15% 0 15%; }
+.ux_interveiw_txt { width: 100%; margin-top: 40px}
+.ux_interveiw_txt div { width: 100%; overflow: hidden; }
+.ux_interveiw_txt div ul { float: left; width: 19%; margin: .5%; text-align: center; }
+.ux_interveiw_txt div ul li:nth-child(1) { margin-bottom: 10px; }
+.ux_interveiw_txt div ul li:nth-child(2) {}
+
+/* ux_note */
+.ux_note { width: 70%; margin: 300px 15% 0 15%; }
+.ux_note_txt { width: 100%; margin-top: 40px; }
+.ux_note_txt div { width: 100%; overflow: hidden; }
+.ux_note_txt div:nth-child(2) { margin-bottom: 30px; }
+.ux_note_txt div ul { float: left; width: 23%; margin: 1%; text-align: left; }
+.ux_note_txt div:nth-child(2) ul li img, .ux_note_txt div:nth-child(4) ul li img { float: left; width: 15%; margin: 0 2.5%; }
+.ux_note_txt div:nth-child(2) ul li p, .ux_note_txt div:nth-child(4) ul li p { float: left; width: 76%; margin-left: 4%; color: #339966; }
+
+/* ux_persona */
+.ux_persona { width: 70%; margin: 300px 15% 0 15%;  }
+.ux_persona_txt span { color: #339966; }
+.ux_persona_txt div:nth-child(1) { width: 100%; padding: 40px 0 20px 0; overflow: hidden; }
+.ux_persona_txt div:nth-child(1) h2 { float: left; width: 88%; height: auto; margin-bottom: 10px; }
+.ux_persona_txt div:nth-child(1) ul:nth-child(2) { float: left; width: 30%; }
+.ux_persona_txt div:nth-child(1) ul:nth-child(3) {  position: relative; float: left; width: 70%; }
+.ux_persona_txt div:nth-child(2) { width: 100%; overflow: hidden; }
+.ux_persona_txt div:nth-child(1) img { position: absolute; right: 40px; bottom: 0; height: 80px; z-index: 10; }
+
+/* ux_concept */
+.ux_concept { width: 100%; margin-top: 300px; }
+.ux_concept_txt { width: 100%; }
+.ux_concept_txt h2 { margin: 20px 0; text-align: center; }
+.ux_concept_icon { margin:0 auto; width: 400px; padding-top: 10px; height: 100px; }
+.ux_concept_icon div:nth-child(1) { float: left; width: 120px; margin: 0 0 0 30px; }
+.ux_concept_icon div:nth-child(1) img { width: 100%;  }
+.ux_concept_icon div:nth-child(2) { float: left; width: 100px; font-size: 4em; line-height: 110px; text-align: center; height: 100px; color: #339966; }
+.ux_concept_icon div:nth-child(3) { float: left; width: 120px; margin: 0 30px 0 0; }
+.ux_concept_icon div:nth-child(3) img { width: 100%;  }
+.ux_concept_icon_title { margin:0 auto; width: 400px; margin-top: 10px; }
+.ux_concept_icon_title div:nth-child(1) { float: left; width: 120px; margin: 0 50px 0 30px; font-size: 1.4rem; font-weight: 400; line-height: 1.4rem; text-align: center; color: #339966; }
+.ux_concept_icon_title div:nth-child(2) { float: left; width: 120px; margin: 0 30px 0 50px; font-size: 1.4rem; font-weight: 400; line-height: 1.4rem; text-align: center; color: #339966; }
+.ux_concept_icon_txt { margin:0 auto; width: 60%; padding-top: 40px; text-align: center; }
+
+/* ux_system */
+.ux_system { position: relative; width: 100%; height: 750px; margin-top: 300px; background:url(../images/ux/ux_system_bg.png) top center; background-repeat: no-repeat; }
+.ux_system h1 { padding-top: 40px; }
+.ux_system_txt { width: 100%; }
+.ux_system_txt div:nth-child(1) div:nth-child(1) { position: absolute; top: 180px; left: 50%; margin-left: -377px;}
+.ux_system_txt div:nth-child(1) div:nth-child(2) { position: absolute; top: 200px; right: 50%; margin-right: -808px;}
+.ux_system_txt div:nth-child(2) div:nth-child(1) { position: absolute; top: 150px; left: 50%; margin-left: -490px; width: 130px; }
+.ux_system_txt div:nth-child(2) div:nth-child(1) img { width: 130px; }
+.ux_system_txt div:nth-child(2) div:nth-child(2) { position: absolute; top: 190px; left: 50%; margin-left: -490px; width: 150px; }
+.ux_system_txt div:nth-child(2) div:nth-child(2) img { width: 150px; }
+.ux_system_txt div:nth-child(2) div:nth-child(3) { position: absolute; top: 254px; left: 50%; margin-left: -490px; width: 170px; }
+.ux_system_txt div:nth-child(2) div:nth-child(3) img { width: 170px; }
+.ux_system_txt div:nth-child(2) div:nth-child(4) { position: absolute; top: 150px; left: 50%; margin-left: -290px; width: 130px; }
+.ux_system_txt div:nth-child(2) div:nth-child(4) img { width: 130px; }
+.ux_system_txt div:nth-child(2) div:nth-child(5) { position: absolute; top: 190px; left: 50%; margin-left: -290px; width: 50px; }
+.ux_system_txt div:nth-child(2) div:nth-child(5) img { width: 50px; }
+.ux_system_txt div:nth-child(2) div:nth-child(6) { position: absolute; top: 190px; left: 50%; margin-left: -230px; width: 50px; }
+.ux_system_txt div:nth-child(2) div:nth-child(6) img { width: 50px; }
+
+/* ux_interface */
+.ux_interface { position: relative; width: 100%; margin: 240px 0 200px; }
+.ux_interface_txt { width: 90%; margin: 0 5%; }
+.ux_interface_txt div { width: 100%; }
+.ux_interface_txt > div:nth-child(1) { width: 100%; margin-top: 50px; overflow: hidden; }
+.ux_interface_txt div:nth-child(1) div { float: left; width: 20%; margin-top: 50px; }
+.ux_interface_txt div:nth-child(1) div img { width: 100%; }
+.ux_interface_txt div:nth-child(1) div:nth-child(3) { margin-top: 0%; }
+.ux_interface_txt > div:nth-child(2) { width: 100%; margin-top: -3%; }
+.ux_interface_txt div:nth-child(2) div { float: left; width: 15%; margin: 0 2.5%; text-align: center; overflow: hidden; }
+.ux_interface_txt div:nth-child(2) div:nth-child(2) { margin-right: 22.5%; }
+.ux_interface_txt div:nth-child(2) div ul li:nth-child(1), .ux_interface_txt div:nth-child(4) div ul li:nth-child(1) { font-size: .9rem; font-weight: 600; color: #333; margin-bottom: 2%; }
+.ux_interface_txt > div:nth-child(3) { width: 100%; margin-top: 50px; overflow: hidden; }
+.ux_interface_txt div:nth-child(3) div { float: left; width: 20%; margin-top: 50px; }
+.ux_interface_txt div:nth-child(3) div img { width: 100%; }
+.ux_interface_txt > div:nth-child(4) { width: 100%; }
+.ux_interface_txt div:nth-child(4) div { float: left; width: 15%; margin: 0 2.5%; text-align: center; overflow: hidden; }
+
+/* Tablet & Mobile Device */
+@media all and (max-width:1024px) {
+    
+    /* main_portfolio */
+    .main_portfolio { width: 100%; overflow: hidden; background: none; }
+    
+    /* ux_font_style */
+    .ux_h1 { font-size: 1.6rem; line-height: 1.8rem; }
+    .ux_h2 { font-size: .9rem; line-height: 1rem; }
+    
+    /* ux_title */
+    .ux_title { margin-top: 200px; overflow: hidden; }
+    .ux_title_logo{ margin: 0 auto; width: 200px; }
+    .ux_title_logo img{ width: 200px; }
+    .ux_title_txt div { width: 100%; margin: 0; padding-top: 20px; }
+    .ux_title_txt div ul { width: 40%; }
+    .ux_title_txt div ul:nth-child(1) { margin: 0 2% 0 8%; }
+    .ux_title_txt div ul:nth-child(2) { margin: 0 8% 0 2%; }
+
+    /* ux_research */
+    .ux_research { margin-top: 150px; overflow: hidden; }
+    .ux_research_txt { float: left; width: 90%; margin: 20px 5%; text-align: center; }
+    .ux_research_txt p:nth-child(2) { font-size: 1rem; line-height: 2rem; }
+    .ux_research_txt p:nth-child(3) { margin-top: 10px; }
+    .ux_research_img { display: none; }
+    
+    /* ux_guideline */
+    .ux_guideline { margin: 150px 10% 0 10%; overflow: hidden; }
+    .ux_guideline_txt { text-align: center; margin-top: 20px; }
+    .ux_guideline_txt div:nth-child(1) { clear: both; width: 100%; margin-bottom: 20px; }
+    .ux_guideline_txt div:nth-child(2) { clear: both; width: 100%; }
+    .ux_guideline_txt h2 { margin-bottom: 8px; }
+    .ux_clock_img { display: none; }
+
+    /* ux_interveiw */
+    .ux_interveiw { width: 90%; margin: 150px 5% 0 5%; }
+    .ux_interveiw_txt { margin-top: 20px}
+    .ux_interveiw_txt div ul { clear: both; width: 90%; margin: 4px 5%; text-align: center; }
+    .ux_interveiw_txt div ul li:nth-child(1) { margin-bottom: 2px; }
+    .ux_interveiw_txt div:nth-child(1) ul:nth-child(5)::after { content: 'ⅴ'; display: block; height: 50px; font-size: 30px; line-height: 50px; color: #ccc; }
+    
+    /* ux_note */
+    .ux_note { width: 90%; margin: 150px 5% 0 5%; }
+    .ux_note_txt { width: 100%; margin-top: 40px;}
+    .ux_note_txt div { width: 100%; overflow: hidden; }
+    .ux_note_txt div:nth-child(2) { margin-bottom: 30px;}
+    .ux_note_txt div ul { clear: both; width: 90%; margin: 0 5%; text-align: center; }
+    .ux_note_txt div ul li { margin: 6px 0; }
+    .ux_note_txt div ul img { display: none; }
+    .ux_note_txt div:nth-child(2) ul li p, .ux_note_txt div:nth-child(4) ul li p { width: 100%; margin: 0; }
+    
+    /* ux_persona */
+    .ux_persona { width: 90%; margin: 150px 5% 0 5%; }
+    .ux_persona > h1 { width: 90%; margin: 0 5%; }
+    .ux_persona_txt { width: 90%; margin: 0 5%; }
+    .ux_persona_txt div:nth-child(1) { padding: 20px 0 10px 0; }
+    .ux_persona_txt div:nth-child(1) ul:nth-child(2) { width: 49%; margin-right: 1%; }
+    .ux_persona_txt div:nth-child(1) ul:nth-child(3) { width: 49%; margin-left: 1%; }
+    .ux_persona_txt div:nth-child(1) img { display: none; }
+
+    /* ux_concept */
+    .ux_concept { width: 90%; margin: 150px 5% 0 5%; }
+    .ux_concept_txt { width: 90%; margin: 0 5%; }
+    .ux_concept_icon, .ux_concept_icon_title { display: none; }
+    .ux_concept_icon_txt { width: 90%; padding-top: 10px; }
+    .ux_concept_icon_txt::before { content: '알람 + 소통'; display: block; padding-bottom: 20px; font-size: 1.2rem; font-weight: 400; color: #339966; }
+
+    /* ux_system */
+    .ux_system { width: 90%; margin: 150px 5% 0 5%; height: auto;;  background: none; }
+    .ux_system h1 { padding: 0; }
+    .ux_system_txt { width: 90%; margin: 0 5%; }
+    .ux_system_txt::before { content: 'Font system\A\A Myriad Pro\A Yoongothic 700\A\A\A Color system\A\A PANTONE 341C\A PANTONE 3Cool Gray 10'; display: block; margin-top: 30px; font-size: 1rem; text-align: center; line-height: 20px; white-space: pre; }
+    .ux_system_txt div { display: none; }
+
+    /* ux_interface */
+    .ux_interface { width: 90%; height: auto; margin: 150px 5% 100px 5%; overflow: hidden; }
+    .ux_interface h1 { margin-bottom: 20px; }
+    .ux_interface_txt { width: 90%; margin: 0 5%; }
+    .ux_interface_txt > div:nth-child(1), .ux_interface_txt > div:nth-child(3) { display: none; }
+    .ux_interface_txt div:nth-child(2) div, .ux_interface_txt div:nth-child(4) div { clear: both; width: 100%; margin: 20px 0 0 0; }
+}
+
+/* sub_menu */
+#logo a { background:url(../images/logo_black.gif) center !important; background-size: 100% !important; }
+.menu ul li a { color: #333 !important; }
+.menu ul li.hover > a { color: #f3971c !important; }
+
+@media all and (max-width:1024px) {
+    #logo a { background:url(../images/logo.gif) center !important; background-size: 100% !important; }
+    .menu ul li a { color: #fff !important; }
+}
+

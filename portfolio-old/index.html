@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="ko">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="title" content="웹퍼블리셔 콩성주" />
+    <meta name="subject" content="웹퍼블리싱,웹표준코딩,웹디자인,웹접근성,크로스부라우징,프론트엔드개발,마크업">
+    <meta name="description" content="웹퍼블리싱,웹표준코딩,웹디자인,웹접근성,크로스부라우징,프론트엔드개발,마크업">
+    <meta name='keywords' content="웹퍼블리싱,웹표준코딩,웹디자인,웹접근성,크로스부라우징,프론트엔드개발,마크업">
+    <meta property="og:title" content="웹퍼블리셔 콩성주">
+    <meta property="og:description" content="웹퍼블리싱,웹표준코딩,웹디자인,웹접근성,크로스부라우징,프론트엔드개발,마크업">
+    <meta name="naver-site-verification" content="cb01e0ba25feb1b892cdefed2cee414ddd7c399b" />
+    <link rel="canonical" href="http://kongseongju.com">
+    <link rel="shortcut icon" type="image/x-icon" href="http://kongseongju.com/upload/images/favicon.ico">
+    <title>Kongseongju</title>
+    <!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+    <link rel="stylesheet" href="upload/css/reset.css" type="text/css">
+    <link rel="stylesheet" href="upload/css/layout.css" type="text/css">
+    <link rel="stylesheet" href="upload/css/jquery.fullPage.css" type="text/css">
+    <link rel="stylesheet" href="upload/css/nav.css" type="text/css">
+    <link rel="stylesheet" href="upload/css/magnific-popup.css" type="text/css">
+    <script type="text/javascript" src="upload/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="upload/js/jquery.fullPage.min.js"></script>
+    <script type="text/javascript" src="upload/js/jquery.magnific-popup.min.js"></script>
+    <script type="text/javascript" src="upload/js/typed.js"></script>
+    <script type="text/javascript">
+        //<![CDATA[
+        function switchScreen() {
+            document.getElementById("loading").style.display = "none";
+            document.getElementById("loading_body").style.display = "";
+        }
+        //]]>
+    </script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#fullpage').fullpage({
+                anchors: ['home', 'about', 'skill', 'portfolio', 'contact'],
+                menu: '#menu',
+                continuousVertical: false
+            });
+            //playing the video
+            $('video').get(0).play();
+        });
+    </script>
+</head>
+<body onload="switchScreen();">
+    <!-- loading -->
+    <div id="loading" style=" position: absolute; width: 100%; height: 100%; background: #fff; left: 0; top: 0; z-index: 999; ">
+        <div style=" position: absolute; width: 120px; top: 50%; left: 50%; margin-left: -60px; margin-top: -60px; ">
+            <img src="upload/images/logo_loading.gif" style=" width: 100%; " title="loading" alt="로딩중입니다. 잠시만 기다려 주세요.">
+        </div>
+    </div>
+    <div id="loading_body" style="display:none;"></div>
+    <!-- wrap -->
+    <div id="wrap">
+        <!-- header -->
+        <header id="header">
+            <!-- nav -->
+            <div class="nav_wrapper">
+                <div id="logo">
+                    <a href="index.html" title="logo"></a>
+                </div>
+                <div class="spinner-master">
+                    <input type="checkbox" id="spinner-form">
+                    <label for="spinner-form" class="spinner-spin">
+                        <div class="spinner diagonal part-1"></div>
+                        <div class="spinner horizontal"></div>
+                        <div class="spinner diagonal part-2"></div>
+                    </label>
+                </div>
+                <nav id="menu" class="menu">
+                    <ul class="dropdown">
+                        <li data-menuanchor="home" class="active"><a href="#home">Home</a></li>
+                        <li data-menuanchor="about"><a href="#about">About</a></li>
+                        <li data-menuanchor="skill"><a href="#skill">Skill</a>
+                        </li>
+                        <li data-menuanchor="portfolio"><a href="#portfolio">Portfolio</a>
+                            <!-- menu_sub 
+                            <ul>
+                                <li><a href="portfolio.web.html">Web Design & Mark Up</a></li>
+                                <li><a href="#">Mobile Design & Mark Up</a></li>
+                                <li><a href="">UX & UI Design</a></li>
+                                <li><a href="#">ETC.</a></li>
+                            </ul>
+                            -->
+                        </li>
+                        <li data-menuanchor="contact"><a href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <script src="upload/js/toggleMenu.js"></script>
+        </header>
+        <div id="fullpage">
+            <section class="section" id="section0">
+                <video autoplay loop muted data-keepplaying id="myVideo" width="100%" height="100%">
+                    <source src="upload/images/main_home.webm" type="video/webm">
+                    <source src="upload/images/main_home.mp4" type="video/mp4">
+                </video>
+                <article class="main_title">
+                    <div class="main_title_top">
+                        <h1>Design & Markup</h1>
+                        <h1>Kongseongju Markup Developer</h1>
+                        <p>/</p>
+                    </div>
+                    <div class="type-wrap-home">
+                        <div id="typed-strings-home">
+                            <p>Thank you for visiting my website</p>
+                        </div>
+                        <span id="typed_home"></span>
+                    </div>
+                    <script>
+                        $(function () {
+                            $("#typed_home").typed({
+                                stringsElement: $('#typed-strings-home'),
+                                typeSpeed: 120,
+                                backDelay: 3000,
+                                backSpeed: 20,
+                                loop: true
+                            });
+                        });
+                    </script>
+                </article>
+            </section>
+            <section class="section main_about moveDown" id="section1">
+                <div class="main_about_bg">
+                    <article class="main_about_con">
+                        <div class="main_about_con_img_left moving"><img src="upload/images/mac01.png" title="notebook_top" alt="notebook_top"></div>
+                        <div class="main_about_con_img_right moving"><img src="upload/images/mac02.png" title="notebook_top" alt="notebook_top"></div>
+                        <div class="main_about_con_title moving">
+                            <h1>코드에 섬세함을 더하다</h1>
+                            <h2>웹디자인과 웹개발을 이해하고 소통하는 웹퍼블리셔입니다<br></h2>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section main_skill moveDown" id="section2">
+                <div class="main_skill_bg">
+                    <article class="main_skill_con">
+                        <!-- skill -->
+                        <div class="main_skill_con01">
+                            <div class="main_skill_con_title">
+                                <h1 class="ball bubble">SKILL</h1>
+                            </div>
+                            <div class="main_skill_con_txt">
+                                <ul>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>HTML5</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>CSS3</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Javascript / jQuery</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Bootstrap</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>웹표준,웹접근성 준수 / 반응형웹 제작 경험</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Cross Browsing / SEO에 대한 실무 경험</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Tool -->
+                        <div class="main_skill_con02">
+                            <div class="main_skill_con_title">
+                                <h1>TOOL</h1>
+                            </div>
+                            <div class="main_skill_con_txt">
+                                <ul>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Adobe Photoshop</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Adobe Illustrator</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Adobe Braket</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Adobe Dreamweaver</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Sublime text3</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Atom</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- Timeline -->
+                        <div class="main_skill_con03">
+                            <div class="main_skill_con_title">
+                                <h1>TIMELINE</h1>
+                            </div>
+                            <div class="main_skill_con_txt">
+                                <ul>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Monoraum Javascript & jQuery 수료</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Sorriso I&C Web Publisher</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>Remain Web Design Workshop 수료</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>2014 평화예술대전 디자인부분 최우수상</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>28사단 82연대 군복무</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                    <li></li>
+                                    <li class="line_box">
+                                        <div class="line_box_con">
+                                            <span>백석대학교 시각디자인과 재학</span>
+                                            <div class="line"></div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </section>
+            <section class="section main_portfolio" id="section3">
+                <article class="main_portfolio_con">
+                    <div class="main_portfolio_con01">
+                        <div class="box box_1">
+                            <a href="portfolio.web.html" class="box_btn box_btn_bg">
+                                <span>WEB DESIGN & MARK UP</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_portfolio_con02">
+                        <div class="box box_2">
+                            <a href="portfolio.mobile.html" class="box_btn box_btn_bg">
+                                <span>MOBILE DESIGN & MARK UP</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_portfolio_con03">
+                        <div class="box box_3">
+                            <a href="portfolio.ux.html" class="box_btn box_btn_bg">
+                                <span>INTERRACTION DESIGN</span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main_portfolio_con04">
+                        <div class="box box_4">
+                            <a href="#test-popup" class="box_btn box_btn_bg open-popup-link">
+                                <span>ETC</span>
+                            </a>
+                        </div>
+                    </div>
+                </article>
+                <div id="test-popup" class="white-popup mfp-hide">
+                    <img src="upload/images/logo_sad.gif">
+                    <div class="white-popup-txt">
+                        <p>죄송합니다.
+                        <br>업데이트 중입니다.</p>
+                    </div>
+                </div>
+            </section>
+            <section class="section main_contact" id="section4">
+                <article class="main_contact_con">
+                    <div class="main_contact_con_title">
+                        <h1>CONTACT</h1>
+                        <div class="type-wrap-mail">
+                            <div id="typed-strings-mail">
+                                <p>Please make sure to give us your comment.</p>
+                                <p>We'll be waiting for your answer.</p>
+                            </div>
+                            <span id="typed_mail"></span>
+                        </div>
+                        <script>
+                            $(function () {
+                                $("#typed_mail").typed({
+                                    stringsElement: $('#typed-strings-mail'),
+                                    typeSpeed: 100,
+                                    backDelay: 5000,
+                                    backSpeed: 20,
+                                    loop: true
+                                });
+                            });
+                        </script>
+                    </div>
+                    <div class="main_contact_con_txt">
+                        <FORM method='post' name="MailWriteForm" action="upload/mail/form_mail.php">
+                            <input type=hidden name='f_mailsend' value='1'>
+                            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                <tr>
+                                    <td>
+                                        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                                            <tr>
+                                                <td>
+                                                    <input type="text" name="mail_from_name" placeholder="Name" class="mail_style mail_name">
+                                                </td>
+                                                <td>
+                                                    <input type="email" name="mail_from_email" placeholder="Email" class="mail_style mail_mail">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <input type="text" name="mail_subject" placeholder="Subject" class="mail_style mail_subject">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2">
+                                                    <textarea name="mail_body" placeholder="Message" class="mail_style mail_message"></textarea>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2"></td>
+                                            </tr>
+                                            <tr>
+                                                <td colspan="2" align="center">
+                                                    <a onClick="javascript:form_mail_submit()" class="mail_send">SEND</a>
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </td>
+                                </tr>
+                            </table>
+                        </FORM>
+                        <script language=JavaScript>
+                            function form_mail_submit() {
+
+                                if (no_value('mail_subject')) return error_msg('mail_subject', '제목을 입력하십시오.');
+                                if (no_value('mail_from_name')) return error_msg('mail_from_name', '보낸사람 이름을 입력하십시오.');
+                                if (no_value('mail_body')) return error_msg('mail_body', '본문내용을 입력하십시오.');
+                                if (!document.MailWriteForm.mail_from_email.value.match(/\S+@\S+\.\S+/)) return error_msg('mail_from_email', '보낸사람 메일주소를 확인하십시오.');
+                                document.MailWriteForm.submit();
+                            }
+
+                            function no_value(inputName) {
+                                value = eval('document.MailWriteForm.' + inputName).value.replace(/\s/g, "");
+                                if (!value) return 1;
+                            }
+
+                            function error_msg(inputName, msg) {
+                                alert(msg);
+                                eval('document.MailWriteForm.' + inputName).focus();
+                                return false;
+                            }
+                        </script>
+                    </div>
+                </article>
+                <footer class="footer">
+                    <div class="footer_link">
+                        <ul>
+                            <li>
+                                <a href="#test-popup" class="open-popup-link"><img src="upload/images/main_contact_icon01.png" title="phone" alt="phone"></a>
+                            </li>
+                            <li>
+                                <a href="#test-popup" class="open-popup-link"><img src="upload/images/main_contact_icon02.png" title="sms" alt="sms"></a>
+                            </li>
+                            <li>
+                                <a href="#test-popup" class="open-popup-link"><img src="upload/images/main_contact_icon03.png" title="github" alt="github"></a>
+                            </li>
+                            <li>
+                                <a href="#test-popup" class="open-popup-link"><img src="upload/images/main_contact_icon04.png" title="tistory" alt="tistory"></a>
+                            </li>
+                            <li>
+                                <a href="#test-popup" class="open-popup-link"><img src="upload/images/main_contact_icon05.png" title="instagram" alt="instagram"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <address class="address">
+                        <p>      
+                        Markup Developer Kongseongju | 010 2654 9876 | ksj_design@naver.com<br>
+                        Copyrightsⓒ2016 Kongseongju All rights reserved
+                        </p>
+                    </address>
+                </footer>
+            </section>
+        </div>
+    </div>
+    <script type="text/javascript">
+        $('.open-popup-link').magnificPopup({
+            type: 'inline',
+            midClick: true
+        });
+    </script>
+</body>
+
+</html>
