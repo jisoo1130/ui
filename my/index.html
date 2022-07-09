@@ -11,9 +11,9 @@
   <script src="./common/js/jquery-2.2.4.min.js"></script>
   <script src="./common/js/jquery-ui.min.js"></script>
   <script src="./common/js/index.js"></script>
-  <!-- <script id="snowAnimate">
+  <script id="snowAnimate">
     var flakeCnt; var delta_x = new Array(), delta_y = new Array(); var move_x = new Array(), move_y = new Array(); var resolution_x, resolution_y; $(function () { resolution_x = document.documentElement.clientWidth, resolution_y = document.documentElement.clientHeight; var position_x, position_y, i = 0; flakeCnt = document.getElementById('petalCanvas').getElementsByTagName('span').length; $("#petalCanvas span").each(function () { position_x = Math.random() * resolution_x; position_y = -30 - (Math.random() * 100); $(this).css({ "left": position_x + "px", "top": position_y + "px" }); $(this).attr("id", "drop" + i); move_x[i] = position_x; move_y[i] = position_y; i++; }); petalSet(); }); function petalSet() { var hei, speed; if (resolution_y < 1000) { hei = 1000; } else { hei = resolution_y; } var max_angle = hei / 2; for (var i = 0; i < flakeCnt; i++) { speed = Math.random(); delta_x[i] = (speed * max_angle) / 1200 + i / 100; delta_y[i] = (speed * 0.4) + 0.3; } petalDrop(); } function petalDrop() { for (var i = 0; i < flakeCnt; i++) { move_x[i] -= delta_x[i]; move_y[i] += delta_y[i]; if (move_x[i] < 0) move_x[i] = resolution_x - 30; if (move_y[i] > resolution_y - 10) move_y[i] = -20; $("#drop" + i).css({ "left": move_x[i] + "px", "top": move_y[i] + "px" }); } setTimeout("petalDrop()", 5); }
-  </script> -->
+  </script>
   <script>
 
     // 스크롤 방지
@@ -23,8 +23,6 @@
     //   event.stopPropagation();
     //   return false;
     // });
-
-
 
     $(document).ready(function () {
 
@@ -52,6 +50,8 @@
           step04();
         } else if (screenIdx === 5) {
           step05();
+        } else if (screenIdx === 6) {
+          step06();
         }
       });
 
@@ -143,7 +143,7 @@
           $step.eq(5).find('.binna').animate({
             opacity: 1
           }, 1000, function () {
-            typing('서로 반가워서 일까요..? 세상', $('.step').eq(3));
+            typing('서로 반가워서 일까요..? 아니면 회사가 힘들어서 일까요..? 빛나와 성주는 그동안 못다한 얘기를 펑펑 했어요. 연락도 잦아졌어요.. 밤새도록 통화도 했어요.. 약속도 잡았어요. 나중에 서로 만나는 사람이 없으면 같이 담양에 가기로.... 약속은 어떻게 되었을까요..?', $('.step').eq(5));
           });
         }, 1000);
 
@@ -153,6 +153,29 @@
           }, 1000);
         }, 1000);
       }
+
+      function step06() {
+        disableBtn(true);
+        $step.addClass('on');
+        let positionH = $step.eq(6).offset().top;
+        move(positionH, 1000);
+
+        setTimeout(function () {
+          $step.eq(6).find('.binna').animate({
+            opacity: 1
+          }, 1000, function () {
+            typing('ㄴㅇㄴ마안ㅁ에ㅐㅏㄴ메ㅐ아ㅔㅐㄴ?', $('.step').eq(6));
+          });
+        }, 1000);
+
+        setTimeout(function () {
+          $step.eq(6).find('.seongju').animate({
+            opacity: 1
+          }, 1000);
+        }, 1000);
+      }
+
+
 
 
       function move(positionH, spped) {
@@ -229,15 +252,22 @@
       <div class="seongju"><img src="./common/images/seongju03.gif" alt="" /></div>
     </article>
 
+    <article class="step">
+      <div class="typing"></div>
+      <div class="heart"><img src="./common/images/heart.gif" alt="" /></div>
+      <div class="binna"><img src="./common/images/binna04.gif" alt="" /></div>
+      <div class="seongju"><img src="./common/images/seongju04.gif" alt="" /></div>
+    </article>
 
-    
-    
-
-    <button type="button" class="next_btn">GO</button>
+    <button type="button" class="next_btn">Click♥</button>
 
   </div>
 
   <div id="petalCanvas" style="position:fixed;top:0;z-index:999;height:0;overflow:visible;">
+    <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
+    <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
+    <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
+    <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
     <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
     <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
     <span>*</span><span>*</span><span>*</span><span>*</span><span>*</span><span>*</span>
