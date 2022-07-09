@@ -58,8 +58,8 @@
 }
 
 .story>.step:nth-child(1).on {
-  filter: blur(100px);
-  transition: 5s;
+  /* filter: blur(100px);
+  transition: 5s; */
 }
 
 .story>.step:nth-child(1) .typing {
@@ -79,7 +79,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-color: #ffff66;
+  background-color: #ffcc99;
 }
 
 .story>.step:nth-child(2) .binna {
@@ -146,7 +146,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-color: #ccffcc;
+  background-color: #66ffcc;
 }
 
 .story>.step:nth-child(4) .binna {
@@ -186,7 +186,7 @@
 }
 
 .story>.step:nth-child(5) .typing {
-  top: 200px;
+  top: 150px;
   right: 100px;
   width: 360px;
   left: 50%;
@@ -211,13 +211,13 @@
 
 .story>.step:nth-child(6) .binna {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   left: 50px;
   opacity: 0;
 }
 .story>.step:nth-child(6) .seongju {
   position: absolute;
-  bottom: 30px;
+  bottom: 20px;
   right: 50px;
   opacity: 0;
 }
