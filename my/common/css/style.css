@@ -248,13 +248,13 @@
 
 .story>.step:nth-child(7) .binna {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   left: 30px;
   opacity: 0;
 }
 .story>.step:nth-child(7) .seongju {
   position: absolute;
-  bottom: 30px;
+  bottom: 10px;
   right: 50px;
   opacity: 0;
 }
@@ -275,7 +275,7 @@
 
 .story>.step:nth-child(7) .heart {
   position: absolute;
-  bottom: 300px;
+  bottom: 280px;
   left: 50%;
   transform: translateX(-50%);
   opacity: 0;
