@@ -52,6 +52,8 @@
           step05();
         } else if (screenIdx === 6) {
           step06();
+        } else if (screenIdx === 7) {
+          step07();
         }
       });
 
@@ -69,7 +71,7 @@
         //   opacity: 0
         // }, 1000);
 
-        move(windowH, 1000);
+        move(windowH, 3000);
 
         setTimeout(function () {
           $step.eq(1).find('.binna').animate({
@@ -77,106 +79,123 @@
           }, 1000, function () {
             typing('1992년 6월 9일 서울에 예쁜 아기가 태어났어요. 이름은 빛나였어요. 빛나는 세상 어느 아기보다 밝게 빛나고 사랑스러운 아기였어요..♥', $('.step').eq(1));
           });
-        }, 1000);
+        }, 2000);
       }
 
       function step02() {
         disableBtn(true);
         $step.addClass('on');
         let positionH = $step.eq(2).offset().top;
-        move(positionH, 1000);
+        move(positionH, 3000);
 
         setTimeout(function () {
           $step.eq(2).find('.binna').animate({
             opacity: 1
-          }, 1000, function () {
+          }, 2000, function () {
             typing('빛나는 어느덧 대학생이 되어 수원역 푸드코트에서 아르바이트를 하게 되었어요. 그러던 중 주방에서 나시고랭을 볶던 한 남자를 발견했어요. 그 남자의 이름은 성주였고 그렇게 둘의 첫 만남이 시작되었어요.', $('.step').eq(2));
           });
-        }, 1000);
+        }, 2000);
 
         setTimeout(function () {
           $step.eq(2).find('.seongju').animate({
             opacity: 1
-          }, 1000);
-        }, 5000);
+          }, 2000);
+        }, 2000);
       }
 
       function step03() {
         disableBtn(true);
         $step.addClass('on');
         let positionH = $step.eq(3).offset().top;
-        move(positionH, 1000);
+        move(positionH, 3000);
 
         setTimeout(function () {
           $step.eq(3).find('.binna').animate({
             opacity: 1
-          }, 1000, function () {
+          }, 2000, function () {
             typing('빛나와 성주는 처음 만났을 때부터 서로에게 호감이 있어서 대학교 때 만남을 가지게 되었어요. 서로 좋아하는 마음만 있으면 이쁘게 만날 줄 알았어요.. 서로 어렸던 걸까요..? 서툴렀었던 걸까요..? 서로에게 아쉬움만 남긴채 한달간의 짧은 만남은 끝이 났어요..', $('.step').eq(3));
           });
-        }, 1000);
+        }, 2000);
 
         setTimeout(function () {
           $step.eq(3).find('.seongju').animate({
             opacity: 1
-          }, 1000);
-        }, 1000);
+          }, 2000);
+        }, 2000);
       }
 
       function step04() {
         disableBtn(true);
         $step.addClass('on');
         let positionH = $step.eq(4).offset().top;
-        move(positionH, 1000);
+        move(positionH, 3000);
 
         setTimeout(function () {
-          typing('그로 부터 몇년이 흘렀을까요..? 세상은 많이 변해있었어요. 빛나와 성주는 어느새 직장인이 되어 바쁜 하루하루를 살아가고 있었어요. 우연일까요..? 빛나와 성주의 회사가 가깝다는 것을 서로 알게 되었어요. 빛나와 성주는 강남에서 만나게 되었어요.', $('.step').eq(4));
-        }, 1000);
+          typing('그로 부터 몇년이 흘렀을까요..? 세상은 많이 변해있었어요. 빛나와 성주는 어느새 직장인이 되어 바쁜 하루하루를 살아가고 있었어요. 하지만 서로에 대한 기억은 간직하고 있던걸까요..? 아니면 우연일까요..? 빛나와 성주의 회사가 가깝다는 것을 서로 알게 되었어요. 빛나와 성주는 강남에서 만나게 되었어요.', $('.step').eq(4));
+        }, 2000);
       }
 
       function step05() {
         disableBtn(true);
         $step.addClass('on');
         let positionH = $step.eq(5).offset().top;
-        move(positionH, 1000);
+        move(positionH, 3000);
 
         setTimeout(function () {
           $step.eq(5).find('.binna').animate({
             opacity: 1
-          }, 1000, function () {
-            typing('서로 반가워서 일수도 있어요. 아니면 회사가 힘들어서 일수도 있죠. 빛나와 성주는 그동안 못다한 얘기를 쏟아내듯 펑펑 했어요. 연락도 잦아졌어요. 밤새도록 통화도 했어요. 약속도 잡았죠. 나중에 서로 만나는 사람이 없으면 같이 담양에 가기로...... 약속은 어떻게 되었을까요..?', $('.step').eq(5));
+          }, 2000, function () {
+            typing('서로 반가워서 일수도 있어요. 아니면 회사가 힘들어서 일수도 있죠. 빛나와 성주는 그동안 못다한 얘기를 쏟아내듯 펑펑 했어요. 연락도 잦아졌어요. 밤새도록 통화도 했어요. 나중에 서로 만나는 사람이 없으면 같이 담양에 가기로 약속도 잡았죠. 약속은 어떻게 되었을까요..?', $('.step').eq(5));
           });
-        }, 1000);
+        }, 2000);
 
         setTimeout(function () {
           $step.eq(5).find('.seongju').animate({
             opacity: 1
-          }, 1000);
-        }, 1000);
+          }, 2000);
+        }, 2000);
       }
 
       function step06() {
         disableBtn(true);
         $step.addClass('on');
         let positionH = $step.eq(6).offset().top;
-        move(positionH, 1000);
+        move(positionH, 3000);
 
         setTimeout(function () {
           $step.eq(6).find('.binna').animate({
             opacity: 1
           }, 1000, function () {
-            typing('저는 운명을 믿는 사람은 아니였어요', $('.step').eq(6));
+            typing('운명은 자신이 만들어 가는거라 생각했어요. 하지만 운명에는 말로 설명하기 힘든 것이 있어요. 그건 겪어봐야 아는 것 같아요. 저는 빛나를 만났을 때 운명을 느꼈고, 지금도 놀라고 있으며, 앞으로도 빛나와의 행복한 미래가 운명처럼 다가오고 있음을 느껴요.', $('.step').eq(6));
           });
-        }, 1000);
+        }, 2000);
 
         setTimeout(function () {
           $step.eq(6).find('.seongju').animate({
             opacity: 1
-          }, 1000);
-        }, 1000);
+          }, 2000);
+        }, 2000);
+        setTimeout(function () {
+          $step.eq(6).find('.heart').animate({
+            opacity: 1
+          }, 2000);
+        }, 3000);
       }
 
+      function step07() {
+        disableBtn(true);
+        $step.addClass('on');
+        let positionH = $step.eq(7).offset().top;
+        move(positionH, 3000);
 
-
+        setTimeout(function () {
+          $step.eq(7).find('.heart').animate({
+            opacity: 1
+          }, 2000, function () {
+            typing('빛나라서 참 좋았고. 빛나라서 행복한. 사랑은 그런 것 같아 빛나야. 우리 사랑했던 나날들을 기억하며 그렇게 늘 함께 했으면 좋겠어. 영원히 사랑해. 나와 결혼해줘 빛나야.', $('.step').eq(7));
+          });
+        }, 2000);
+      }
 
       function move(positionH, spped) {
         $screen.animate({
@@ -193,7 +212,7 @@
         typingTxt = typingTxt.split("");
         if (typingBool == false) {
           typingBool = true;
-          tyInt = setInterval(typing, 10);
+          tyInt = setInterval(typing, 150);
         }
         target.find('.typing').css('opacity', '1');
         function typing() {
@@ -257,6 +276,13 @@
       <div class="heart"><img src="./common/images/heart.gif" alt="" /></div>
       <div class="binna"><img src="./common/images/binna04.gif" alt="" /></div>
       <div class="seongju"><img src="./common/images/seongju04.gif" alt="" /></div>
+    </article>
+
+    <article class="step">
+      <div class="typing"></div>
+      <div class="heart"><img src="./common/images/heart.gif" alt="" /></div>
+      <!-- <div class="binna"><img src="./common/images/binna04.gif" alt="" /></div>
+      <div class="seongju"><img src="./common/images/seongju04.gif" alt="" /></div> -->
     </article>
 
     <button type="button" class="next_btn">Click♥</button>

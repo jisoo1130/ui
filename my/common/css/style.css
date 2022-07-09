@@ -103,7 +103,6 @@
   height: 30px;
 }
 
-
 /* STEP 03 */
 .story>.step:nth-child(3) {
   /* background-image: url(../images/bg03.png); */
@@ -187,7 +186,7 @@
 }
 
 .story>.step:nth-child(5) .typing {
-  top: 50px;
+  top: 200px;
   right: 100px;
   width: 360px;
   left: 50%;
@@ -224,7 +223,7 @@
 }
 
 .story>.step:nth-child(6) .typing {
-  top: 50px;
+  top: 20px;
   right: 100px;
   width: 360px;
   left: 50%;
@@ -244,13 +243,13 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-color: #cc99ff;
+  background-color: #ff99cc;
 }
 
 .story>.step:nth-child(7) .binna {
   position: absolute;
   bottom: 30px;
-  left: 50px;
+  left: 30px;
   opacity: 0;
 }
 .story>.step:nth-child(7) .seongju {
@@ -272,6 +271,60 @@
 .story>.step:nth-child(7) .typing:after {
   top: 5px;
   height: 30px;
+}
+
+.story>.step:nth-child(7) .heart {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+/* STEP 08 */
+.story>.step:nth-child(8) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #ff9999;
+}
+
+.story>.step:nth-child(8) .binna {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  opacity: 0;
+}
+.story>.step:nth-child(8) .seongju {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(8) .typing {
+  top: 80px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: #000;
+}
+
+.story>.step:nth-child(8) .typing:after {
+  top: 5px;
+  height: 35px;
+}
+
+.story>.step:nth-child(8) .heart {
+  position: absolute;
+  bottom: 200px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
 }
 
 /*************************************************************************************/
