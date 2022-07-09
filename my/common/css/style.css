@@ -1,0 +1,253 @@
+@charset "utf-8";
+
+/* layout */
+.story {
+  font-family: "soya";
+}
+
+.typing {
+  display: inline-block;
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.typing:after {
+  content: '';
+  position: relative;
+  top: 9px;
+  right: -3px;
+  width: 2px;
+  height: 50px;
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+}
+
+.next_btn {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  font-size: 30px;
+}
+
+.story>.step {
+  position: relative;
+}
+
+/* STEP 01 */
+.story>.step:nth-child(1) {
+  background-image: url(../images/bg01.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  background-attachment: fixed;
+  background-color: #eebcc7;
+}
+
+.story>.step:nth-child(1).on {
+  filter: blur(100px);
+  transition: 5s;
+}
+
+.story>.step:nth-child(1) .typing {
+  bottom: 300px;
+  left: 50%;
+  font-size: 50px;
+  text-align: center;
+  width: 250px;
+  transform: translateX(-50%);
+}
+
+
+/* STEP 02 */
+.story>.step:nth-child(2) {
+  background-image: url(../images/bg02.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #171717;
+}
+
+.story>.step:nth-child(2) .binna {
+  position: absolute;
+  bottom: 300px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.story>.step:nth-child(2) .typing {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  color: #fff;
+}
+
+.story>.step:nth-child(2) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+
+/* STEP 03 */
+.story>.step:nth-child(3) {
+  background-image: url(../images/bg03.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #a6a6a6;
+}
+
+.story>.step:nth-child(3) .binna {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(3) .seongju {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(3) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.story>.step:nth-child(3) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+
+/* STEP 04 */
+.story>.step:nth-child(4) {
+  background-image: url(../images/bg04.png);
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #e1e1e1;
+}
+
+.story>.step:nth-child(4) .binna {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(4) .seongju {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(4) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.story>.step:nth-child(4) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 05 */
+.story>.step:nth-child(5) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+.story>.step:nth-child(5) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+}
+
+/* STEP 06 */
+.story>.step:nth-child(6) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #000;
+}
+
+.story>.step:nth-child(5) .binna {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(5) .seongju {
+  position: absolute;
+  bottom: 50px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(6) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+/*************************************************************************************/
+#petalCanvas {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 0;
+  overflow: visible;
+}
+
+#petalCanvas > span {
+  position: absolute;
+  font-size: 50px;
+  color: #3a9dd4;
+}
+
+#petalCanvas > span:nth-child(2n) {
+  position: absolute;
+  color: #fff;
+}
+
+
+@keyframes cursor {
+  0% {
+    background: transparent;
+  }
+
+  50% {
+    background: #000;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
