@@ -182,7 +182,7 @@
   background-repeat: no-repeat;
   background-size: 100% auto;
   background-attachment: fixed;
-  background-color: #ccffff;
+  background-color: #99cccc;
 }
 
 .story>.step:nth-child(5) .typing {
@@ -260,7 +260,7 @@
 }
 
 .story>.step:nth-child(7) .typing {
-  top: 50px;
+  top: 20px;
   right: 100px;
   width: 360px;
   left: 50%;
