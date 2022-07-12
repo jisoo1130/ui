@@ -17,18 +17,17 @@
   <script>
 
     // 스크롤 방지
-    // $('html, body').css({'overflow': 'hidden', 'height': '100%'});
-    // $('#element').on('scroll touchmove mousewheel', function(event) {
-    //   event.preventDefault();
-    //   event.stopPropagation();
-    //   return false;
-    // });
+    $('html, body').css({'overflow': 'hidden', 'height': '100%'});
+    $('html, body').on('scroll touchmove mousewheel', function(event) {
+      event.preventDefault();
+      event.stopPropagation();
+      return false;
+    });
 
     $(document).ready(function () {
 
       // audio
       var audio = new Audio('./common/music/bgm.mp3');
-      debugger
       audio.play();
 
       // 초기화
