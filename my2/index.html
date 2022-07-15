@@ -26,8 +26,6 @@
 
     setTimeout(function () {
       var audio = new Audio('./common/music/music.mp3');
-
-      debugger
       audio.play();
     }, 300);
     $(document).ready(function () {
@@ -219,7 +217,7 @@
         typingTxt = typingTxt.split("");
         if (typingBool == false) {
           typingBool = true;
-          tyInt = setInterval(typing, 10);
+          tyInt = setInterval(typing, 250);
         }
         target.find('.typing').css('opacity', '1');
         function typing() {
