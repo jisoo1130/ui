@@ -1,0 +1,363 @@
+@charset "utf-8";
+
+/* layout */
+.story {
+  font-family: "soya";
+}
+
+.typing {
+  display: inline-block;
+  position: absolute;
+  font-size: 30px;
+  opacity: 0;
+}
+
+.typing:after {
+  content: '';
+  position: relative;
+  top: 9px;
+  right: -3px;
+  width: 1px;
+  height: 30px;
+  display: inline-block;
+  animation-name: cursor;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  font-size: 30px;
+}
+
+.next_btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 20px;
+  background: none;
+  border: none;
+  font-size: 20px;
+  font-family: "soya";
+  color: #000;
+}
+
+.next_btn:disabled {
+  opacity: 0.2;
+}
+
+.story>.step {
+  position: relative;
+}
+
+/* STEP 01 */
+.story>.step:nth-child(1) {
+  background-image: url(../images/bg01.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: 150% auto;
+  background-attachment: fixed;
+  background-color: #eebcc7;
+}
+
+.story>.step:nth-child(1).on {
+  /* filter: blur(100px);
+  transition: 5s; */
+}
+
+.story>.step:nth-child(1) .typing {
+  top: 50%;
+  left: 50%;
+  font-size: 20px;
+  text-align: center;
+  width: 90%;
+  transform: translate(-50%, -50%);
+}
+
+/* STEP 02 */
+.story>.step:nth-child(2) {
+  /* background-image: url(../images/bg02.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #ffcc99;
+}
+
+.story>.step:nth-child(2) .binna {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+.story>.step:nth-child(2) .typing {
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 360px;
+  color: #000;
+}
+
+.story>.step:nth-child(2) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 03 */
+.story>.step:nth-child(3) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #ff9966;
+}
+
+.story>.step:nth-child(3) .binna {
+  position: absolute;
+  bottom: 30px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(3) .seongju {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(3) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.story>.step:nth-child(3) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 04 */
+.story>.step:nth-child(4) {
+  /* background-image: url(../images/bg04.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #66ffcc;
+}
+
+.story>.step:nth-child(4) .binna {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(4) .seongju {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(4) .typing {
+  top: 50px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.story>.step:nth-child(4) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 05 */
+.story>.step:nth-child(5) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #99cccc;
+}
+
+.story>.step:nth-child(5) .typing {
+  top: 150px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+
+.story>.step:nth-child(5) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 06 */
+.story>.step:nth-child(6) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #cc99ff;
+}
+
+.story>.step:nth-child(6) .binna {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  opacity: 0;
+}
+.story>.step:nth-child(6) .seongju {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(6) .typing {
+  top: 20px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+
+.story>.step:nth-child(6) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+/* STEP 07 */
+.story>.step:nth-child(7) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #ff99cc;
+}
+
+.story>.step:nth-child(7) .binna {
+  position: absolute;
+  bottom: 10px;
+  left: 30px;
+  opacity: 0;
+}
+.story>.step:nth-child(7) .seongju {
+  position: absolute;
+  bottom: 10px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(7) .typing {
+  top: 20px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #000;
+}
+
+.story>.step:nth-child(7) .typing:after {
+  top: 5px;
+  height: 30px;
+}
+
+.story>.step:nth-child(7) .heart {
+  position: absolute;
+  bottom: 280px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+/* STEP 08 */
+.story>.step:nth-child(8) {
+  /* background-image: url(../images/bg03.png); */
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-attachment: fixed;
+  background-color: #ff9999;
+}
+
+.story>.step:nth-child(8) .binna {
+  position: absolute;
+  bottom: 30px;
+  left: 30px;
+  opacity: 0;
+}
+.story>.step:nth-child(8) .seongju {
+  position: absolute;
+  bottom: 30px;
+  right: 50px;
+  opacity: 0;
+}
+
+.story>.step:nth-child(8) .typing {
+  top: 80px;
+  right: 100px;
+  width: 360px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 35px;
+  color: #000;
+}
+
+.story>.step:nth-child(8) .typing:after {
+  top: 5px;
+  height: 35px;
+}
+
+.story>.step:nth-child(8) .heart {
+  position: absolute;
+  bottom: 180px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+}
+
+/*************************************************************************************/
+#petalCanvas {
+  position: fixed;
+  top: 0;
+  z-index: 999;
+  height: 0;
+  overflow: visible;
+}
+
+#petalCanvas > span {
+  position: absolute;
+  font-size: 30px;
+  color: #fff;
+  opacity: 0.5;
+}
+
+#petalCanvas > span:nth-child(2n) {
+  position: absolute;
+  color: #fff;
+}
+
+
+@keyframes cursor {
+  0% {
+    background: transparent;
+  }
+
+  50% {
+    background: #000;
+  }
+
+  100% {
+    background: transparent;
+  }
+}
